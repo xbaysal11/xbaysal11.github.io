@@ -1,71 +1,109 @@
 body {
-    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    font-size: 1rem;
+    font-family     : open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    font-size       : 1rem;
     background-color: #fff;
-    color: #1d1d1d;
-    margin: 0;
-    padding: 0;
-    letter-spacing: .02em;
-    line-height: 1.5;
+    color           : #1d1d1d;
+    margin          : 0;
+    padding         : 0;
+    letter-spacing  : 0.02em;
+    line-height     : 1.5;
 }
-#fp-nav ul li a span{
+
+#fp-nav ul li a span {
     background: #fff;
 }
+
+.loader {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : #222222;
+    z-index        : 99;
+    color          : #fff;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+@keyframes hidder {
+    100% {
+        opacity   : 0;
+        visibility: hidden;
+    }
+} 
+
+.hidden {
+    animation          : hidder 3s;
+    animation-fill-mode: forwards;
+}
+
+.ldBar {
+    width    : 50vw;
+    height   : 100%;
+    // margin:auto;
+}
+
 .navbar {
-    position: fixed;
-    height: 50px;
-    display: grid;
+    position             : fixed;
+    height               : 50px;
+    display              : grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    width: 100%;
-    z-index: 9;
-    color: #f2f2f2;
-    padding-top: 1em;
+    align-items          : center;
+    width                : 100%;
+    z-index              : 9;
+    color                : #f2f2f2;
+    padding-top          : 1em;
 
     .header-left {
         justify-self: start;
-        padding: 0 3em;
-        img{
+        padding     : 0 3em;
+
+        img {
             width: 50%;
         }
     }
+
     .header-right {
         justify-self: end;
-        padding: 0 3em;
-
+        padding     : 0 3em;
     }
 }
 
-ul{
+ul {
     list-style: none outside none;
-    margin: 0;
+    margin    : 0;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#fff;
+    color          : #fff;
 }
+
 .navbar-sidebar {
-    z-index: 1;
-    display: block;
-    position: fixed;
-    top: 50%;
-    right: 64px;
+    z-index          : 1;
+    display          : block;
+    position         : fixed;
+    top              : 50%;
+    right            : 64px;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform        : translateY(-50%);
 }
+
 .navbar-sidebar .social {
     margin-right: -8px;
     padding-left: 10px;
 }
 
 .navbar-sidebar .social a {
-    width: 36px;
-    height: 36px;
-    display: block;
-    line-height: 36px;
-    text-align: center;
-    background: rgba(255, 255, 255, .1);
-    color: rgba(255, 255, 255, .5);
+    width        : 36px;
+    height       : 36px;
+    display      : block;
+    line-height  : 36px;
+    text-align   : center;
+    background   : rgba(255, 255, 255, 0.1);
+    color        : rgba(255, 255, 255, 0.5);
     margin-bottom: 1px;
 }
 
@@ -76,12 +114,13 @@ a{
 .navbar-sidebar .social .icon {
     font-size: 18px;
 }
+
 .page-footer .footer-left {
-    position: fixed;
-    left: 5em;
-    z-index: 10;
-    bottom: 1.5em;
-    font-size: .75rem !important;
+    position : fixed;
+    left     : 5em;
+    z-index  : 10;
+    bottom   : 1.5em;
+    font-size: 0.75rem !important;
 }
 
 .page-footer .footer-left span:nth-child(1) {
@@ -91,126 +130,125 @@ a{
 .page-footer .footer-left span i {
     margin-right: 5px;
 }
+
 .page-footer .footer-left span {
-    margin-bottom: 5em;
-    color: rgba(255, 255, 255, .5);
+    margin-bottom : 5em;
+    color         : rgba(255, 255, 255, 0.5);
     // font-weight: 700;
-
 }
+
 .opacity-75 {
-    opacity: .75!important;
+    opacity: 0.75 !important;
 }
-
 
 .page-footer .footer-right {
     position: fixed;
-    bottom: 1.5em;
-    right: 5em;
-    z-index: 10;
-    display: inline-flex;
+    bottom  : 1.5em;
+    right   : 5em;
+    z-index : 10;
+    display : inline-flex;
 }
 
 .page-footer .footer-right .note {
     position: relative;
-    top: 3px;
+    top     : 3px;
 }
 
 .page-footer .footer-right .note a {
-    color: #fff;
+    color      : #fff;
     font-weight: 700;
-    opacity: .8;
+    opacity    : 0.8;
 }
 
 .page-footer .footer-right .note a:hover {
     text-decoration: none;
-    opacity: 1;
+    opacity        : 1;
 }
 
 .page-footer .footer-right p {
     margin-bottom: 0;
-    font-size: .75rem;
-    color: rgba(255, 255, 255, .5);
+    font-size    : 0.75rem;
+    color        : rgba(255, 255, 255, 0.5);
 }
-
 
 .scrolldown {
-    position: absolute;
-    bottom: 0;
-    top: auto;
-    right: auto;
+    position     : absolute;
+    bottom       : 0;
+    top          : auto;
+    right        : auto;
     margin-bottom: 32px;
-    left: 50%;
-    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    z-index: 2;
-    background: 0 0;
+    left         : 50%;
+    font-family  : open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    z-index      : 2;
+    background   : 0 0;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .scrolldown {
         display: none;
     }
 }
 
-@media(max-height:480px) {
+@media (max-height: 480px) {
     .scrolldown {
         display: none;
     }
 }
 
 .scrolldown a {
-    margin-left: 0;
-    position: relative;
-    display: block;
-    font-size: .75rem;
-    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    line-height: 1;
-    padding: 8px;
-    -webkit-transition: .3s;
-    transition: .3s;
-    color: rgba(255, 255, 255, .2);
-    background: 0 0;
-    border: none;
+    margin-left       : 0;
+    position          : relative;
+    display           : block;
+    font-size         : 0.75rem;
+    font-family       : open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    line-height       : 1;
+    padding           : 8px;
+    -webkit-transition: 0.3s;
+    transition        : 0.3s;
+    color             : rgba(255, 255, 255, 0.2);
+    background        : 0 0;
+    border            : none;
 }
 
 .scrolldown a .txt {
-    position: absolute;
-    width: 200px;
-    text-align: center;
-    left: -100px;
-    top: 0;
+    position      : absolute;
+    width         : 200px;
+    text-align    : center;
+    left          : -100px;
+    top           : 0;
     text-transform: uppercase;
     letter-spacing: 8px;
 }
 
 .scrolldown a:after {
-    position: absolute;
-    content: "";
-    bottom: 30px;
-    right: 0;
-    height: 34px;
-    width: 18px;
-    margin-right: 9px;
-    background: 0 0;
-    -webkit-transition: .3s;
-    transition: .3s;
+    position          : absolute;
+    content           : "";
+    bottom            : 30px;
+    right             : 0;
+    height            : 34px;
+    width             : 18px;
+    margin-right      : 9px;
+    background        : 0 0;
+    -webkit-transition: 0.3s;
+    transition        : 0.3s;
 }
 
 .scrolldown a:before {
-    position: absolute;
-    content: "";
-    bottom: 40px;
-    right: 0;
-    -webkit-transition: .3s;
-    transition: .3s;
-    margin-right: 20px;
-    height: 32px;
-    width: 0;
-    border: 2px solid currentColor;
-    border-top: none;
-    border-right: none;
-    background: 0 0;
-    color: #fff;
-    opacity: .5;
+    position          : absolute;
+    content           : "";
+    bottom            : 40px;
+    right             : 0;
+    -webkit-transition: 0.3s;
+    transition        : 0.3s;
+    margin-right      : 20px;
+    height            : 32px;
+    width             : 0;
+    border            : 2px solid currentColor;
+    border-top        : none;
+    border-right      : none;
+    background        : 0 0;
+    color             : #fff;
+    opacity           : 0.5;
 }
 
 .scrolldown a:hover {
@@ -218,6 +256,6 @@ a{
 }
 
 .scrolldown a:hover:before {
-    bottom: 24px;
+    bottom : 24px;
     opacity: 1;
 }

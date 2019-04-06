@@ -5,12 +5,58 @@ body {
   color: #1d1d1d;
   margin: 0;
   padding: 0;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
 #fp-nav ul li a span {
   background: #fff;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222222;
+  z-index: 99;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes hidder {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes hidder {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.hidden {
+  -webkit-animation: hidder 3s;
+          animation: hidder 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ldBar {
+  width: 50vw;
+  height: 100%;
 }
 
 .navbar {
@@ -94,7 +140,7 @@ a {
   left: 5em;
   z-index: 10;
   bottom: 1.5em;
-  font-size: .75rem !important;
+  font-size: 0.75rem !important;
 }
 
 .page-footer .footer-left span:nth-child(1) {
@@ -132,7 +178,7 @@ a {
 .page-footer .footer-right .note a {
   color: #fff;
   font-weight: 700;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .page-footer .footer-right .note a:hover {
@@ -142,7 +188,7 @@ a {
 
 .page-footer .footer-right p {
   margin-bottom: 0;
-  font-size: .75rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -174,12 +220,12 @@ a {
   margin-left: 0;
   position: relative;
   display: block;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   line-height: 1;
   padding: 8px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: rgba(255, 255, 255, 0.2);
   background: 0 0;
   border: none;
@@ -204,8 +250,8 @@ a {
   width: 18px;
   margin-right: 9px;
   background: 0 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .scrolldown a:before {
@@ -213,8 +259,8 @@ a {
   content: "";
   bottom: 40px;
   right: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-right: 20px;
   height: 32px;
   width: 0;
@@ -223,7 +269,7 @@ a {
   border-right: none;
   background: 0 0;
   color: #fff;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .scrolldown a:hover {
