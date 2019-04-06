@@ -1,0 +1,128 @@
+ul {
+  list-style: none outside none;
+  margin: 0;
+}
+
+.navbar-sidebar {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  top: 50%;
+  right: 64px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-sidebar .social {
+  margin-right: -8px;
+  padding-left: 10px;
+}
+
+.navbar-sidebar .social a {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1px;
+}
+
+.navbar-sidebar .social a:hover {
+  color: #fff;
+}
+
+.navbar-sidebar .social .icon {
+  font-size: 18px;
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  right: auto;
+  margin-bottom: 32px;
+  left: 50%;
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  z-index: 2;
+  background: 0 0;
+}
+
+@media (max-width: 767px) {
+  .scrolldown {
+    display: none;
+  }
+}
+
+@media (max-height: 480px) {
+  .scrolldown {
+    display: none;
+  }
+}
+
+.scrolldown a {
+  margin-left: 0;
+  position: relative;
+  display: block;
+  font-size: .75rem;
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  line-height: 1;
+  padding: 8px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: rgba(255, 255, 255, 0.2);
+  background: 0 0;
+  border: none;
+}
+
+.scrolldown a .txt {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  left: -100px;
+  top: 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.scrolldown a:after {
+  position: absolute;
+  content: "";
+  bottom: 30px;
+  right: 0;
+  height: 34px;
+  width: 18px;
+  margin-right: 9px;
+  background: 0 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.scrolldown a:before {
+  position: absolute;
+  content: "";
+  bottom: 40px;
+  right: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-right: 20px;
+  height: 32px;
+  width: 0;
+  border: 2px solid currentColor;
+  border-top: none;
+  border-right: none;
+  background: 0 0;
+  color: #fff;
+  opacity: .5;
+}
+
+.scrolldown a:hover {
+  color: #fff;
+}
+
+.scrolldown a:hover:before {
+  bottom: 24px;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

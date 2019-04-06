@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,29 +9,64 @@
     <script type="text/javascript" src="./js/easings.min.js"></script>
     <script type="text/javascript" src="./js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./css/fullpage.min.css"
-    />
-  </head>
-  <body>
-      
-      <div id="fullpage">
-          <div class="section active" id="section1"><h1>fullPage.js</h1></div>
-          <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-          <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
-      </div>
     <script type="text/javascript" src="./js/fullpage.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+    <nav class="navbar-sidebar ">
+            <ul class="social">
+                <li>
+                    <a href="index.html">
+                        <i class=" fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class=" fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</header>
+    <div id="fullpage">
+        <div class="section active" id="section1">
+            <h1>fullPage.js</h1>
+            <footer class="section-footer scrolldown">
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">About Me</span>
+                </a>
+            </footer>
+        </div>
+        <div class="section" id="section2">
+            <h1>No wraps, no extra markup</h1>
+        </div>
+        <div class="section" id="section3">
+            <h1>Just the simplest demo ever</h1>
+        </div>
+    </div>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#fcc', '#4BBFC3', '#7BAABE'],
             navigation: true,
-	navigationPosition: 'left'
+            navigationPosition: 'left'
         });
     </script>
-  </body>
+</body>
+
 </html>
-
-
-
