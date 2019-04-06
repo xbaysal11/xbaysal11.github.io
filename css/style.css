@@ -1,6 +1,21 @@
+body {
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .02em;
+}
+
 ul {
   list-style: none outside none;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar-sidebar {
@@ -35,6 +50,64 @@ ul {
 
 .navbar-sidebar .social .icon {
   font-size: 18px;
+}
+
+.page-footer .footer-left {
+  position: fixed;
+  left: 16px;
+  z-index: 10;
+  bottom: 8px;
+  font-size: .75rem;
+}
+
+.page-footer .footer-left span:nth-child(1) {
+  margin-right: 15px;
+}
+
+.page-footer .footer-left span i {
+  margin-right: 5px;
+}
+
+.page-footer .footer-left p {
+  margin-bottom: 0;
+  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-footer .footer-left p .marked {
+  font-weight: 700;
+}
+
+.page-footer .footer-right {
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+  z-index: 10;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.page-footer .footer-right .note {
+  position: relative;
+  top: 3px;
+}
+
+.page-footer .footer-right .note a {
+  color: #fff;
+  font-weight: 700;
+  opacity: .8;
+}
+
+.page-footer .footer-right .note a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.page-footer .footer-right p {
+  margin-bottom: 0;
+  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .scrolldown {

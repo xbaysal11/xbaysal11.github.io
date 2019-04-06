@@ -1,6 +1,20 @@
+body {
+    font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    letter-spacing: .02em
+}
+
 ul{
     list-style: none outside none;
     margin: 0;
+}
+a{
+    text-decoration: none;
+    color:#fff;
 }
 .navbar-sidebar {
     z-index: 1;
@@ -13,7 +27,7 @@ ul{
 }
 .navbar-sidebar .social {
     margin-right: -8px;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 .navbar-sidebar .social a {
@@ -24,15 +38,69 @@ ul{
     text-align: center;
     background: rgba(255, 255, 255, .1);
     color: rgba(255, 255, 255, .5);
-    margin-bottom: 1px
+    margin-bottom: 1px;
 }
 
 .navbar-sidebar .social a:hover {
-    color: #fff
+    color: #fff;
 }
 
 .navbar-sidebar .social .icon {
-    font-size: 18px
+    font-size: 18px;
+}
+.page-footer .footer-left {
+    position: fixed;
+    left: 16px;
+    z-index: 10;
+    bottom: 8px;
+    font-size: .75rem;
+}
+
+.page-footer .footer-left span:nth-child(1) {
+    margin-right: 15px;
+}
+
+.page-footer .footer-left span i {
+    margin-right: 5px;
+}
+.page-footer .footer-left p {
+    margin-bottom: 0;
+    font-size: .75rem;
+    color: rgba(255, 255, 255, .5);
+}
+
+.page-footer .footer-left p .marked {
+    font-weight: 700;
+}
+
+.page-footer .footer-right {
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    z-index: 10;
+    display: inline-flex;
+}
+
+.page-footer .footer-right .note {
+    position: relative;
+    top: 3px;
+}
+
+.page-footer .footer-right .note a {
+    color: #fff;
+    font-weight: 700;
+    opacity: .8;
+}
+
+.page-footer .footer-right .note a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.page-footer .footer-right p {
+    margin-bottom: 0;
+    font-size: .75rem;
+    color: rgba(255, 255, 255, .5);
 }
 
 
@@ -45,18 +113,18 @@ ul{
     left: 50%;
     font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
     z-index: 2;
-    background: 0 0
+    background: 0 0;
 }
 
 @media(max-width:767px) {
     .scrolldown {
-        display: none
+        display: none;
     }
 }
 
 @media(max-height:480px) {
     .scrolldown {
-        display: none
+        display: none;
     }
 }
 
@@ -72,7 +140,7 @@ ul{
     transition: .3s;
     color: rgba(255, 255, 255, .2);
     background: 0 0;
-    border: none
+    border: none;
 }
 
 .scrolldown a .txt {
@@ -82,7 +150,7 @@ ul{
     left: -100px;
     top: 0;
     text-transform: uppercase;
-    letter-spacing: 8px
+    letter-spacing: 8px;
 }
 
 .scrolldown a:after {
@@ -95,7 +163,7 @@ ul{
     margin-right: 9px;
     background: 0 0;
     -webkit-transition: .3s;
-    transition: .3s
+    transition: .3s;
 }
 
 .scrolldown a:before {
@@ -113,14 +181,14 @@ ul{
     border-right: none;
     background: 0 0;
     color: #fff;
-    opacity: .5
+    opacity: .5;
 }
 
 .scrolldown a:hover {
-    color: #fff
+    color: #fff;
 }
 
 .scrolldown a:hover:before {
     bottom: 24px;
-    opacity: 1
+    opacity: 1;
 }
