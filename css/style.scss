@@ -1,13 +1,40 @@
 body {
     font-family     : open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
     font-size       : 1rem;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     color           : #1d1d1d;
     margin          : 0;
     padding         : 0;
     letter-spacing  : 0.02em;
     line-height     : 1.5;
 }
+
+#section1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: scroll;
+}
+
+// #particles-js{
+//     width: 100%;
+//     height: 100%;
+//     // background-color: #b61924;
+//     background-image: url('');
+//     background-size: cover;
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     z-index: -10;
+//   }
+
+  .content{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      text-align: center;
+  }
 
 #fp-nav ul li a span {
     background: #fff;
@@ -19,15 +46,17 @@ body {
     left           : 0;
     width          : 100%;
     height         : 100%;
-    background     : #222222;
-    z-index        : 99;
-    color          : #fff;
+    background     : #000000;
+    z-index        : 999;
     display        : flex;
     justify-content: center;
     align-items    : center;
 }
 
-@keyframes hidder {
+@keyframes hidder {    
+    97% {
+        opacity   : 99%;
+    }
     100% {
         opacity   : 0;
         visibility: hidden;
@@ -35,14 +64,13 @@ body {
 } 
 
 .hidden {
-    animation          : hidder 3s;
+    animation          : hidder 5s;
     animation-fill-mode: forwards;
 }
 
 .ldBar {
-    width    : 50vw;
-    height   : 100%;
-    // margin:auto;
+    width    : 100%;
+    height   : 100px;
 }
 
 .navbar {
@@ -109,10 +137,12 @@ a {
 
 .navbar-sidebar .social a:hover {
     color: #fff;
+    color: rgb(217, 3, 255);
 }
 
 .navbar-sidebar .social .icon {
     font-size: 18px;
+// color: linear-gradient(90deg, rgba(255,177,3,1) 0%, rgba(211,0,255,1) 100%);
 }
 
 .page-footer .footer-left {

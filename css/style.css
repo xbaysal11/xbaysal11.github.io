@@ -1,12 +1,28 @@
 body {
   font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: black;
   color: #1d1d1d;
   margin: 0;
   padding: 0;
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+
+#section1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: scroll;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
 }
 
 #fp-nav ul li a span {
@@ -19,9 +35,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #222222;
-  z-index: 99;
-  color: #fff;
+  background: #000000;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,6 +49,9 @@ body {
 }
 
 @-webkit-keyframes hidder {
+  97% {
+    opacity: 99%;
+  }
   100% {
     opacity: 0;
     visibility: hidden;
@@ -41,6 +59,9 @@ body {
 }
 
 @keyframes hidder {
+  97% {
+    opacity: 99%;
+  }
   100% {
     opacity: 0;
     visibility: hidden;
@@ -48,15 +69,15 @@ body {
 }
 
 .hidden {
-  -webkit-animation: hidder 3s;
-          animation: hidder 3s;
+  -webkit-animation: hidder 5s;
+          animation: hidder 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .ldBar {
-  width: 50vw;
-  height: 100%;
+  width: 100%;
+  height: 100px;
 }
 
 .navbar {
@@ -129,6 +150,7 @@ a {
 
 .navbar-sidebar .social a:hover {
   color: #fff;
+  color: #d903ff;
 }
 
 .navbar-sidebar .social .icon {
