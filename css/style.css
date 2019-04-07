@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:400");
 body {
-  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 1rem;
   background: url("../assets/img/image.jpg");
   color: #ffffff;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
   line-height: 1.5;
 }
 
 .card {
   width: 30%;
   height: 60%;
-  background: rgba(77, 77, 77, 0.2);
+  background: rgba(8, 8, 8, 0.544);
   border-radius: 3px;
   margin: 10px;
 }
@@ -132,8 +133,9 @@ h1.section-heading:before {
 }
 
 .skill-logo {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 30%;
 }
 
 .card-body {
