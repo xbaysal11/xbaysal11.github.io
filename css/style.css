@@ -27,6 +27,39 @@ body {
   margin: 0;
 }
 
+.timeline ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+}
+
+.timeline ul:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 30%;
+  background: #ddd;
+}
+
+.timeline ul li {
+  padding: 20px;
+}
+
+.timeline ul li div {
+  padding: 5px 10px;
+}
+
+.timeline ul li span {
+  color: #aaa;
+  position: absolute;
+  left: 29%;
+  font-size: 12px;
+  background: black;
+  padding: 5px 0;
+}
+
 .swiper-container {
   width: 100%;
   padding-top: 50px;
