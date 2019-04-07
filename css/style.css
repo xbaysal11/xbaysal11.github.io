@@ -1,7 +1,7 @@
 body {
   font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
-  background-color: black;
+  background: url("../assets/img/image.jpg");
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -60,7 +60,7 @@ body {
   height: 100%;
   top: 0;
   left: 30%;
-  background: #ff264a;
+  background: #6d0617;
 }
 
 .timeline ul li {
@@ -72,12 +72,13 @@ body {
 }
 
 .timeline ul li span {
-  color: #aaa;
+  color: white;
   position: absolute;
-  left: 29%;
+  left: 28%;
   font-size: 12px;
-  background: black;
-  padding: 5px 0;
+  background: #ff264a;
+  padding: 5px;
+  border-radius: 10%;
 }
 
 .swiper-pagination-bullet-active {
@@ -181,7 +182,7 @@ h1.section-heading:before {
   position: absolute;
   font-size: 5em;
   opacity: .1;
-  color: #fff;
+  color: #ff264a;
 }
 
 .row {
@@ -309,7 +310,17 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ff264a;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+a:hover {
+  color: #ff264a;
+  text-decoration: underline;
+  outline: none;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .navbar-sidebar {

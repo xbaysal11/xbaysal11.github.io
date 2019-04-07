@@ -3,7 +3,7 @@ $color1: #ff264a;
 body {
     font-family     : open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
     font-size       : 1rem;
-    background-color: rgb(0, 0, 0);
+    background: url("../assets/img/image.jpg");
     color           : #ffffff;
     margin          : 0;
     padding         : 0;
@@ -63,7 +63,7 @@ body {
             height    : 100%;
             top       : 0;
             left      : 30%;
-            background: $color1;
+            background: #6d0617;
         }
 
         & li {
@@ -74,12 +74,13 @@ body {
             }
 
             & span {
-                color     : #aaa;
+                color     : rgb(255, 255, 255);
                 position  : absolute;
-                left      : 29%;
+                left      : 28%;
                 font-size : 12px;
-                background: rgb(0, 0, 0);
-                padding   : 5px 0;
+                background: $color1;
+                padding   : 5px;
+                border-radius: 10%;
 
             }
         }
@@ -177,7 +178,7 @@ h1 {
         font-size   : 5em;
         opacity     : .1;
         // z-index  : -1;
-        color       : #fff;
+        color       : $color1;
     }
 }
 
@@ -282,11 +283,22 @@ h1 {
 ul {
     list-style: none outside none;
     margin    : 0;
+    & li {
+        // display: inline-block;
+    }
 }
 
 a {
     text-decoration: none;
-    color          : #fff;
+    color          : $color1;
+    transition: all .5s linear;
+
+    &:hover{
+        color:$color1;
+        text-decoration: underline;
+        outline: none;
+        transform: translate3d(0,0,0);
+    }
 }
 
 .navbar-sidebar {
