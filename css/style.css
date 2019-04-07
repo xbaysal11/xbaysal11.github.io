@@ -9,6 +9,57 @@ body {
   line-height: 1.5;
 }
 
+.card {
+  width: 30%;
+  height: 60%;
+  background: rgba(77, 77, 77, 0.2);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.card-header {
+  padding: .75em 1.25em;
+  background-color: rgba(0, 0, 0, 0.36);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.503);
+}
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill-name {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.skill-logo {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.card-body {
+  display: -ms-grid;
+  display: grid;
+}
+
+.row-card-item {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
 .bg-icon {
   -webkit-transition: .5s;
   transition: .5s;
