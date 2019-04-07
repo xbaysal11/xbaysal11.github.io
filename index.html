@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hi, I'm Baisalbek Daniiarov</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/circle-png.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/circle-png.png" />
     <script type="text/javascript" src="./js/easings.min.js"></script>
     <script type="text/javascript" src="./js/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="./js/loading-bar.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hoverMeAnim.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
@@ -84,8 +85,15 @@
         <div class="section active" id="section1">
             <!-- <video loop muted autoplay playsinline="playsinline" src="./assets/img/space_visual_elements_dribbble.mp4"> -->
             <div class="container">
-
                 <h1>IMAGE</h1>
+                <div class="bg-icon">
+                    <a href="#" >
+                        <div class="flex-btn">
+                            <i class="fas fa-file-pdf"></i>
+                            <p> Resume</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <footer class="scrolldown">
                 <a class="down">
@@ -98,8 +106,44 @@
         <div class="section" id="section2">
             <!-- <div id="particles-js"> -->
             <div class="container">
-
                 <h1>About Me</h1>
+                <div id="about">
+                        <div class="row">
+                          <div class="col-6 col-md-6 res_col">
+                            <strong>Name:</strong>
+                          </div>
+                          <div class="col-md-6 res_inf">Baisalbek Daniiarov.</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 col-md-6 res_col">
+                            <strong>Date of birth:</strong>
+                          </div>
+                          <div class="col-md-6 res_inf">23 May 1999.</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 col-md-6 res_col">
+                            <strong>Address</strong>
+                          </div>
+                          <div class="col-md-6 res_inf">Bishkek,Kyrgyzstan.</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 col-md-6 res_col">
+                            <strong>Profession:</strong>
+                          </div>
+                          <div class="col-md-6 res_inf">
+                            Web Programmer, Java Developer, Android Developer.
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6 col-md-6 res_col">
+                            <strong>Specialization:</strong>
+                          </div>
+                          <div class="col-md-6 res_inf">
+                            Hands sharpened by BackEnd, but FrontEnd is our joy.
+                          </div>
+                        </div>
+                        
+            </div>
             </div>
             <!-- </div> -->
             <footer class="scrolldown">
@@ -118,7 +162,6 @@
         </div>
         <div class="section" id="section3">
             <div class="container">
-
                 <h1>Skills</h1>
             </div>
             <footer class="scrolldown">
@@ -130,7 +173,6 @@
         </div>
         <div class="section" id="section4">
             <div class="container">
-
                 <h1>Projects</h1>
             </div>
             <footer class="scrolldown">
@@ -142,15 +184,14 @@
         </div>
         <div class="section" id="section5 ">
             <div class="container">
-
                 <h1>Expirience</h1>
             </div>
             <footer class="scrolldown">
-                    <a class="down">
-                        <span class="icon"></span>
-                        <span class="txt">Top</span>
-                    </a>
-                </footer>
+                <a class="down">
+                    <span class="icon"></span>
+                    <span class="txt">Top</span>
+                </a>
+            </footer>
         </div>
     </div>
     <script type="text/javascript">

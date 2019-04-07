@@ -2,11 +2,64 @@ body {
   font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
   background-color: black;
-  color: #1d1d1d;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+
+.bg-icon {
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bg-icon:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.bg-icon .flex-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bg-icon .flex-btn p {
+  margin: 1em 0 0 2em;
+}
+
+.bg-icon i {
+  position: absolute;
+  font-size: 5em;
+  opacity: .1;
+  color: #fff;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row .res_col {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.row .res_inf {
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .container {
@@ -144,6 +197,308 @@ a {
 
 .navbar-sidebar .social a:hover {
   color: #fff;
+}
+
+.navbar-sidebar .social a:hover body {
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.navbar-sidebar .social a:hover .bg-icon i {
+  position: absolute;
+  font-size: 5em;
+  opacity: .1;
+  z-index: -1;
+  color: #fff;
+}
+
+.navbar-sidebar .social a:hover .bg-icon .btn {
+  border: none;
+  background: none;
+  color: #fff;
+  width: 10em;
+  height: 3em;
+  -webkit-transition: ease-in .5s;
+  transition: ease-in .5s;
+}
+
+.navbar-sidebar .social a:hover .bg-icon .btn a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navbar-sidebar .social a:hover .bg-icon .btn a:hover {
+  background: #1d1d1d;
+}
+
+.navbar-sidebar .social a:hover .container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  z-index: 10;
+  height: 100%;
+  max-height: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar-sidebar .social a:hover #fp-nav ul li a span {
+  background: #fff;
+}
+
+.navbar-sidebar .social a:hover .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@keyframes fadeOut {
+  97% {
+    opacity: 99%;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.navbar-sidebar .social a:hover .hidden {
+  -webkit-animation: fadeOut 5s;
+          animation: fadeOut 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.navbar-sidebar .social a:hover .ldBar {
+  width: 100%;
+  height: 100px;
+}
+
+.navbar-sidebar .social a:hover .navbar {
+  position: fixed;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 9;
+  color: #f2f2f2;
+}
+
+.navbar-sidebar .social a:hover .navbar .header-left {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding: 0 3em;
+}
+
+.navbar-sidebar .social a:hover .navbar .header-left img {
+  width: 50%;
+}
+
+.navbar-sidebar .social a:hover .navbar .header-right {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 0 3em;
+}
+
+.navbar-sidebar .social a:hover ul {
+  list-style: none outside none;
+  margin: 0;
+}
+
+.navbar-sidebar .social a:hover a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-sidebar .social a:hover .navbar-sidebar {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  top: 50%;
+  right: 64px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-sidebar .social a:hover .navbar-sidebar .social {
+  margin-right: -8px;
+  padding-left: 10px;
+}
+
+.navbar-sidebar .social a:hover .navbar-sidebar .social a {
+  width: 36px;
+  height: 36px;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+  background: rgba(98, 98, 98, 0.068);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1px;
+}
+
+.navbar-sidebar .social a:hover .navbar-sidebar .social a:hover {
+  color: #fff;
+}
+
+.navbar-sidebar .social a:hover .navbar-sidebar .social .icon {
+  font-size: 18px;
+}
+
+.navbar-sidebar .social a:hover .page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 99;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1em;
+  font-size: 0.75rem !important;
+}
+
+.navbar-sidebar .social a:hover .page-footer .footer-left {
+  justify-self: start;
+  padding: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar-sidebar .social a:hover .page-footer .footer-left p i {
+  margin-left: 1em;
+}
+
+.navbar-sidebar .social a:hover .page-footer .footer-right {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 0 5em;
+}
+
+.navbar-sidebar .social a:hover .opacity-75 {
+  opacity: 0.75 !important;
+}
+
+.navbar-sidebar .social a:hover .scrolldown {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  right: auto;
+  margin-bottom: 32px;
+  left: 50%;
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  z-index: 2;
+  background: 0 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-sidebar .social a:hover .scrolldown {
+    display: none;
+  }
+}
+
+@media (max-height: 480px) {
+  .navbar-sidebar .social a:hover .scrolldown {
+    display: none;
+  }
+}
+
+.navbar-sidebar .social a:hover .scrolldown a {
+  margin-left: 0;
+  position: relative;
+  display: block;
+  font-size: 0.75rem;
+  font-family: open sans, opensans, roboto, helvetica, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  line-height: 1;
+  padding: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.2);
+  background: 0 0;
+  border: none;
+}
+
+.navbar-sidebar .social a:hover .scrolldown a .txt {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  left: -100px;
+  top: 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.navbar-sidebar .social a:hover .scrolldown a:after {
+  position: absolute;
+  content: "";
+  bottom: 30px;
+  right: 0;
+  height: 34px;
+  width: 18px;
+  margin-right: 9px;
+  background: 0 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar-sidebar .social a:hover .scrolldown a:before {
+  position: absolute;
+  content: "";
+  bottom: 40px;
+  right: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 20px;
+  height: 32px;
+  width: 0;
+  border: 2px solid currentColor;
+  border-top: none;
+  border-right: none;
+  background: 0 0;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.navbar-sidebar .social a:hover .scrolldown a:hover {
+  color: #fff;
+}
+
+.navbar-sidebar .social a:hover .scrolldown a:hover:before {
+  bottom: 24px;
+  opacity: 1;
 }
 
 .navbar-sidebar .social .icon {
