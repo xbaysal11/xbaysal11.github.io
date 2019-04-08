@@ -165,8 +165,12 @@ h1 {
 
 }
 
+.swiper-button-next{
+    background-image:  !important;
+}
+
 .bg-icon {
-    position: fixed;
+    position: absolute;
     bottom: 4em;
     right: 4em;
     transition: .5s;
