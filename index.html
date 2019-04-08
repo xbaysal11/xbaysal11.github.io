@@ -87,7 +87,7 @@
             </nav>
         </header>
         <div id="fullpage">
-            <div class="section"    id="section1">
+            <div class="section"  data-anchor="main"  >
                 <!-- <video loop muted autoplay playsinline="playsinline" src="./assets/img/space_visual_elements_dribbble.mp4"> -->
                 <div class="container">
                     <div class="my-icon">
@@ -115,7 +115,7 @@
                 </footer>
                 <!-- </video> -->
             </div>
-            <div class="section"    id="section2">
+            <div class="section"  data-anchor="about_me"  >
                 <div class="container">
                     <h1 class="section-heading">About Me</h1>
                     <div class="about">
@@ -171,7 +171,7 @@
                     </a>
                 </footer>
             </div>
-            <div class="section"    id="section3">
+            <div class="section"    data-anchor="skills">
                 <div class="container">
                     <h1>Skills</h1>
                     <div class="card-wrapper">
@@ -230,7 +230,7 @@
                     </a>
                 </footer>
             </div>
-            <div class="section"    id="section4">
+            <div class="section"    data-anchor="projects">
                 <div class="container">
                     <h1>Projects</h1>
                     <div class="swiper-container">
@@ -297,7 +297,7 @@
                     </a>
                 </footer>
             </div>
-            <div class="section"    id="section5 ">
+            <div class="section"    data-anchor="epirience">
                 <div class="container">
                     <h1>Expirience</h1>
                     <div class="timeline">
@@ -334,11 +334,11 @@
                     </a>
                 </footer>
             </div>
-            <div class="section"    id="section6">
+            <div class="section"    idata-anchord="contacts">
                 <div class="container">
                     <h1>Contacts</h1>
                     <div class="bg-icon">
-                        <a href="#section1">
+                        <a href="#main">
                             <div class="flex-btn">
                                 <i class="fas fa-arrow-alt-circle-up"></i>
                                 <p>Top</p>
@@ -358,15 +358,15 @@
 
         <script type="text/javascript">
             var myFullpage = new fullpage("#fullpage", {
-                navigationTooltips: ['firstSlide', 'secondSlide'],
-                // anchors: [
-                //     "section1",
-                //     "section2",
-                //     "section3",
-                //     "section4",
-                //     "section5",
-                //     "section6"
-                // ],
+                navigationTooltips: ['Main', 'About Me', 'Skills', 'Projects', 'Expirience', 'Contacts'],
+                anchors: [
+                    "main",
+                    "about_me",
+                    "skills",
+                    "projects",
+                    "epirience",
+                    "contacts"
+                ],
                 // menu: "#myMenu",
                 autoScrolling: true,
                 navigation: true,
