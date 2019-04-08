@@ -1,18 +1,20 @@
-$color1: #ff264a;
 @import url('https://fonts.googleapis.com/css?family=Heebo:400');
+
+$color1: #ff264a;
+
 body {
-    font-family: 'Heebo', sans-serif;
-    font-size       : 1rem;
-    background: url("../assets/img/image.jpg");
-    color           : #ffffff;
-    margin          : 0;
-    padding         : 0;
-    // word-spacing: 0.5em;
-    letter-spacing  : 0.08em;
-    line-height     : 1.5;
+    font-family   : 'Heebo', sans-serif;
+    font-size     : 1rem;
+    background    : url("../assets/img/image.jpg");
+    color         : #ffffff;
+    margin        : 0;
+    padding       : 0;
+    letter-spacing: 0.08em;
+    line-height   : 1.5;
 }
-.my-icon{
-    & img{
+
+.my-icon {
+    & img {
         width: 40%;
     }
 }
@@ -23,24 +25,26 @@ body {
     background   : rgba(8, 8, 8, 0.544);
     border-radius: 3px;
     margin       : 10px;
-    &:before{
-        position: absolute;
-        content: '';
-        left: 10%;
-        top: 40%;
-        width: 50px;
-        height: 10px;
+
+    &:before {
+        position  : absolute;
+        content   : '';
+        left      : 10%;
+        top       : 40%;
+        width     : 50px;
+        height    : 10px;
         background: $color1;
-  }
-    &:after{
-        position: absolute;
-        content: '';
-        right: 12%;
-        top: 40%;
-        width: 50px;
-        height: 10px;
+    }
+
+    &:after {
+        position  : absolute;
+        content   : '';
+        right     : 12%;
+        top       : 40%;
+        width     : 50px;
+        height    : 10px;
         background: $color1;
-  }
+    }
 }
 
 .card-header {
@@ -50,13 +54,10 @@ body {
 
     & h4 {
         margin: 0;
-
     }
 }
 
 .timeline {
-
-
     & ul {
         list-style: none;
         position  : relative;
@@ -80,32 +81,34 @@ body {
             }
 
             & span {
-                color     : rgb(255, 255, 255);
-                position  : absolute;
-                left      : 28%;
-                font-size : 12px;
-                background: $color1;
-                padding   : 5px;
+                color        : rgb(255, 255, 255);
+                position     : absolute;
+                left         : 28%;
+                font-size    : 12px;
+                background   : $color1;
+                padding      : 5px;
                 border-radius: 10%;
-
             }
         }
     }
 
 }
- 
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background: $color1 !important;
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
     background: #ddd;
 }
-.about{
-    line-height: 2;
+
+.about {
+    line-height: 2em;
 }
 
 h1 {
     color: $color1;
+
     &.section-heading {
         &:before {
             content            : '';
@@ -146,8 +149,7 @@ h1 {
 
 .skill-logo {
     justify-self: center;
-    width: 30%; 
-    // padding: 8px;
+    width       : 30%;
 }
 
 .card-body {
@@ -158,38 +160,34 @@ h1 {
     width                : 100%;
     display              : grid;
     grid-template-columns: 1fr 1fr;
-    // grid-gap          : 1px;
     align-items          : center;
-    // justify-items     : center;
     margin               : 0;
-
-}
-
-.swiper-button-next{
-    background-image:  !important;
 }
 
 .bg-icon {
-    position: absolute;
-    bottom: 4em;
-    right: 4em;
+    position  : absolute;
+    bottom    : 4em;
+    right     : 4em;
     transition: .5s;
-    
+
     &:hover {
         transform: scale(1.08)
     }
+
     & .flex-btn {
         display    : flex;
         align-items: flex-end;
+
         & p {
             margin: 1em 0 0 2em;
         }
     }
+
     & i {
-        position: absolute;
-        font-size   : 5em;
-        opacity     : 0.15;
-        color       : $color1;
+        position : absolute;
+        font-size: 5em;
+        opacity  : 0.15;
+        color    : $color1;
     }
 }
 
@@ -209,27 +207,21 @@ h1 {
 }
 
 .container {
-    width      : 100%;
-    max-width  : 800px;
-    margin     : auto;
-    // position: absolute;
-    z-index    : 10;
-    // width   : 200px;
-    height     : 100%;
-    max-height : 500px;
-    // top     : 50%;
-    // left    : 50%;
-    // margin  : -250px 0 0 -31%;
-    padding    : 20px;
-    text-align : center;
+    width     : 100%;
+    max-width : 800px;
+    margin    : auto;
+    z-index   : 10;
+    height    : 100%;
+    max-height: 500px;
+    padding   : 20px;
+    text-align: center;
 }
 
 #fp-nav ul li a {
-
     & span {
-    background: rgb(255, 255, 255);}
+        background: rgb(255, 255, 255);
+    }
 }
-
 
 .loader {
     position       : fixed;
@@ -266,15 +258,14 @@ h1 {
 }
 
 .navbar {
-    position                : fixed;
-    height                  : 50px;
-    display                 : grid;
-    grid-template-columns   : repeat(2, 1fr);
-    align-items             : center;
-    width                   : 100%;
-    z-index                 : 9;
-    color                   : #f2f2f2;
-    // padding-top          : 1em;
+    position             : fixed;
+    height               : 50px;
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items          : center;
+    width                : 100%;
+    z-index              : 9;
+    color                : #f2f2f2;
 
     .header-left {
         justify-self: start;
@@ -294,9 +285,6 @@ h1 {
 ul {
     list-style: none outside none;
     margin    : 0;
-    & li {
-        // display: inline-block;
-    }
 }
 
 a {
@@ -331,13 +319,11 @@ a {
 }
 
 .navbar-sidebar .social a:hover {
-    color   : #fff;
-    // color: rgb(217, 3, 255);
+    color: #fff;
 }
 
 .navbar-sidebar .social .icon {
     font-size: 18px;
-    // color : linear-gradient(90deg, rgba(255,177,3,1) 0%, rgba(211,0,255,1) 100%);
 }
 
 .page-footer {
@@ -351,9 +337,8 @@ a {
     width                : 100%;
     z-index              : 99;
     color                : rgba(255, 255, 255, 0.5);
-
-    margin-bottom: 1em;
-    font-size    : 0.75rem !important;
+    margin-bottom        : 1em;
+    font-size            : 0.75rem !important;
 
     .footer-left {
         justify-self   : start;
@@ -366,7 +351,6 @@ a {
                 margin-left: 1em;
             }
         }
-
     }
 
     .footer-right {
@@ -378,7 +362,6 @@ a {
 .opacity-75 {
     opacity: 0.75 !important;
 }
-
 
 .scrolldown {
     position     : absolute;

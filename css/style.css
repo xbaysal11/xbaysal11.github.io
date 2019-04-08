@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Heebo:400");
 body {
   font-family: 'Heebo', sans-serif;
@@ -96,7 +95,7 @@ body {
 }
 
 .about {
-  line-height: 2;
+  line-height: 2em;
 }
 
 h1 {
@@ -162,10 +161,6 @@ h1.section-heading:before {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-}
-
-.swiper-button-next {
-  background-image:  !important;
 }
 
 .bg-icon {

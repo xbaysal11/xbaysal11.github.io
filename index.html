@@ -1,409 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hi, I'm Baisalbek Daniiarov</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/circle.png" />
-    <script type="text/javascript" src="./js/easings.min.js"></script>
-    <script type="text/javascript" src="./js/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
-    <script type="text/javascript" src="./js/fullpage.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="./js/loading-bar.js"></script>
+        <title>Hi, I'm Baisalbek Daniiarov</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/circle.png" />
+        <!-- JavaScripts -->
+        <script type="text/javascript" src="./js/fullpage.min.js"></script>
+        <script type="text/javascript" src="./js/swiper.min.js"></script>
+        <!-- Style-->
+        <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/all.min.css" />
+    </head>
 
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" href="./js/loading-bar.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/hoverMeAnim.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-</head>
-
-<body>
-    <div class="loader">
-        <!-- <div class="ldBar" data-stroke="#000 " data-stroke-width="3" data-stroke-trail="#aaf"
-            data-stroke-trail-width="0.8" id="ldBar"></div> -->
-        <img src="./assets/img/lines2.0.gif" alt="" />
-    </div>
-
-    <script type="text/javascript">
-        var bar1 = new ldBar("#ldBar");
-        var bar2 = document.getElementById("ldBar").ldBar;
-        bar1.set(100);
-    </script>
-
-    <script type="text/javascript">
-        window.addEventListener("load", function () {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        });
-    </script>
-
-    <header>
-        <div class="navbar">
-            <div class="header-left">
-                <img src="./assets/img/logo.png" alt="" />
+    <body>
+        <div class="loader">
+            <img src="./assets/img/lines2.0.gif" alt="" />
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+            });
+        </script>
+        <header>
+            <div class="navbar">
+                <div class="header-left">
+                    <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <div class="header-right">
+                    <!-- <ul id="myMenu">
+                        <li data-menuanchor="section1" class="active">
+                            <a href="#section1">First section</a>
+                        </li>
+                        <li data-menuanchor="section2">
+                            <a href="#section2">Second section</a>
+                        </li>
+                        <li data-menuanchor="section3">
+                            <a href="#section3">Third section</a>
+                        </li>
+                        <li data-menuanchor="section4">
+                            <a href="#section4">Fourth section</a>
+                        </li>
+                        <li data-menuanchor="section5">
+                            <a href="#section5">Five section</a>
+                        </li>
+                        <li data-menuanchor="section6">
+                            <a href="#section6 ">Six section</a>
+                        </li>
+                    </ul> -->
+                </div>
             </div>
-            <div class="header-right">
-                    <ul id="myMenu">
-                            <li data-menuanchor="section1" class="active"><a href="#section1">First section</a></li>
-                            <li data-menuanchor="section2"><a href="#section2">Second section</a></li>
-                            <li data-menuanchor="section3"><a href="#section3">Third section</a></li>
-                            <li data-menuanchor="section4"><a href="#section4">Fourth section</a></li>
-                            <li data-menuanchor="section5"><a href="#section5">Five section</a></li>
-                            <li data-menuanchor="section6"><a href="#section6 ">Six section</a></li>
+
+            <nav class="navbar-sidebar ">
+                <ul class="social">
+                    <li>
+                        <a href="index.html">
+                            <i class="icon fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="icon fab fa-telegram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="icon fab fa-google"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="icon fab fa-slack"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="icon fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="fullpage">
+            <div class="section"    id="section1">
+                <!-- <video loop muted autoplay playsinline="playsinline" src="./assets/img/space_visual_elements_dribbble.mp4"> -->
+                <div class="container">
+                    <div class="my-icon">
+                        <img src="./assets/img/circle.png" alt="" />
+                    </div>
+                    <h1 class="section-heading">BAISALBEK DANIIAROV</h1>
+                    <h5>
+                        The world consists of zeros and ones.<br />
+                        You are either one or zero.
+                    </h5>
+                    <div class="bg-icon">
+                        <a href="#">
+                            <div class="flex-btn">
+                                <i class="fas fa-file-pdf"></i>
+                                <p>Resume</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">About Me</span>
+                    </a>
+                </footer>
+                <!-- </video> -->
+            </div>
+            <div class="section"    id="section2">
+                <div class="container">
+                    <h1 class="section-heading">About Me</h1>
+                    <div class="about">
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Name:</strong>
+                            </div>
+                            <div class=" res_inf">Baisalbek Daniiarov.</div>
+                        </div>
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Age:</strong>
+                            </div>
+                            <div class=" res_inf">20.</div>
+                        </div>
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Nationality:</strong>
+                            </div>
+                            <div class=" res_inf">Kyrgyz.</div>
+                        </div>
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Address:</strong>
+                            </div>
+                            <div class=" res_inf">Bishkek,Kyrgyzstan.</div>
+                        </div>
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Profession:</strong>
+                            </div>
+                            <div class=" res_inf">
+                                Web Programmer.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" res_col">
+                                <strong>Specialization:</strong>
+                            </div>
+                            <div class=" res_inf">
+                                Front-End Developer.
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/img/gitimg.png" width="80%" alt="" />
+                    </a>
+                </div>
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Skills</span>
+                    </a>
+                </footer>
+            </div>
+            <div class="section"    id="section3">
+                <div class="container">
+                    <h1>Skills</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="">WEB Tools</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="">WEB Tools</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="">WEB Tools</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                                <div class="row-card-item">
+                                    <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Projects</span>
+                    </a>
+                </footer>
+            </div>
+            <div class="section"    id="section4">
+                <div class="container">
+                    <h1>Projects</h1>
+                    <div class="swiper-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)">
+                            </div>
+                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".swiper-container", {
+                        effect: "coverflow",
+                        grabCursor: true,
+                        initialSlide: 4,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        loop: true,
+                        autoplay: {
+                            delay: 5000
+                        },
+                        keyboard: {
+                            enabled: true,
+                            onlyInViewport: false
+                        },
+                        coverflowEffect: {
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true
+                        },
+                        pagination: {
+                            el: ".swiper-pagination"
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev"
+                        }
+                    });
+                </script>
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Expirience</span>
+                    </a>
+                </footer>
+            </div>
+            <div class="section"    id="section5 ">
+                <div class="container">
+                    <h1>Expirience</h1>
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <span>2019</span>
+                                <div>1 news</div>
+                            </li>
                         </ul>
-            </div>
-        </div>
-
-        <nav class="navbar-sidebar ">
-            <ul class="social">
-                <li>
-                    <a href="index.html">
-                        <i class="icon fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i class="icon fab fa-telegram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i class="icon fab fa-google"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i class="icon fab fa-slack"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <i class="icon fab fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div id="fullpage">
-        <div class="section active" id="section1">
-            <!-- <video loop muted autoplay playsinline="playsinline" src="./assets/img/space_visual_elements_dribbble.mp4"> -->
-            <div class="container">
-                <div class="my-icon">   
-                    <img src="./assets/img/circle.png" alt="" />
-                </div>
-                <h1 class="section-heading">BAISALBEK DANIIAROV</h1>
-                <h5>
-                    The world consists of zeros and ones.<br />
-                    You are either one or zero.
-                </h5>
-                <div class="bg-icon">
-                    <a href="#">
-                        <div class="flex-btn">
-                            <i class="fas fa-file-pdf"></i>
-                            <p>Resume</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">About Me</span>
-                </a>
-            </footer>
-            <!-- </video> -->
-        </div>
-        <div class="section" id="section2">
-            <!-- <div id="particles-js"> -->
-            <div class="container">
-                <h1 class="section-heading">About Me</h1>
-                <div class="about">
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Name:</strong>
-                        </div>
-                        <div class=" res_inf">Baisalbek Daniiarov.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Age:</strong>
-                        </div>
-                        <div class=" res_inf">20.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Nationality:</strong>
-                        </div>
-                        <div class=" res_inf">Kyrgyz.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Address:</strong>
-                        </div>
-                        <div class=" res_inf">Bishkek,Kyrgyzstan.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Profession:</strong>
-                        </div>
-                        <div class=" res_inf">
-                            Web Programmer.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Specialization:</strong>
-                        </div>
-                        <div class=" res_inf">
-                            Front-End Developer.
-                        </div>
+                        <ul>
+                            <li>
+                                <span>2018</span>
+                                <div>1 news</div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>2018</span>
+                                <div>1 news</div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>2017</span>
+                                <div>1 news</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/img/gitimg.png" width="80%" alt="" />
-                </a>
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Contacts</span>
+                    </a>
+                </footer>
             </div>
-            <!-- </div> -->
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Skills</span>
-                </a>
-            </footer>
-            <!-- scripts -->
-            <script src="./js/particles.min.js"></script>
-            <script>
-                particlesJS.load("particles-js", "particles.json", function () {
-                    console.log("particles.js loaded - callback");
-                });
-            </script>
-        </div>
-        <div class="section" id="section3">
-            <div class="container">
-                <h1>Skills</h1>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">WEB Tools</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" />
-                                <h5 class="skill-name">Bootstrap</h5>
+            <div class="section"    id="section6">
+                <div class="container">
+                    <h1>Contacts</h1>
+                    <div class="bg-icon">
+                        <a href="#section1">
+                            <div class="flex-btn">
+                                <i class="fas fa-arrow-alt-circle-up"></i>
+                                <p>Top</p>
                             </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">WEB Tools</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">WEB Tools</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" width="70%" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Projects</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" id="section4">
-            <div class="container">
-                <h1>Projects</h1>
-
-                <div class="swiper-container">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)">
-                        </div>
-                        <div class="swiper-slide active"
-                            style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)">
-                        </div>
-                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)">
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <script>
-                var swiper = new Swiper(".swiper-container", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    initialSlide: 4,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    loop: true,
-                    autoplay: {
-                        delay: 5000
-                    },
-                    keyboard: {
-                        enabled: true,
-                        onlyInViewport: false
-                    },
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true
-                    },
-                    pagination: {
-                        el: ".swiper-pagination"
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev"
-                    }
-                });
-            </script>
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Expirience</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" id="section5 ">
-            <div class="container">
-                <h1>Expirience</h1>
-                <div class="timeline">
-                    <ul>
-                        <li>
-                            <span>2019</span>
-                            <div>1 news</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2018</span>
-                            <div>1 news</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2018</span>
-                            <div>1 news</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2017</span>
-                            <div>1 news</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Contacts</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" id="section5 ">
-            <div class="container">
-                <h1>Contacts</h1>
-                <div class="bg-icon">
-                    <a href="#section1">
-                        <div class="flex-btn">
-                            <i class="fas fa-arrow-alt-circle-up"></i>
-                            <p>Top</p>
-                        </div>
+                <footer class="scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Top</span>
                     </a>
-                </div>
+                </footer>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var myFullpage = new fullpage("#fullpage", {
+                navigationTooltips: ['firstSlide', 'secondSlide'],
+                // anchors: [
+                //     "section1",
+                //     "section2",
+                //     "section3",
+                //     "section4",
+                //     "section5",
+                //     "section6"
+                // ],
+                // menu: "#myMenu",
+                autoScrolling: true,
+                navigation: true,
+                navigationPosition: "left"
+            });
+        </script>
+        <footer id="site-footer" class="page-footer ">
+            <div class="footer-left">
+                <p class="opacity-75">
+                    <i class="fas fa-phone"></i>
+                    +996(703)334411
+                </p>
+                <p class="opacity-75">
+                    <i class="far fa-envelope"></i>
+                    baisalbek.daniiarov@gmail.com
+                </p>
             </div>
 
-            <footer class="scrolldown">
-                <a class="down">
-                    <span class="icon"></span>
-                    <span class="txt">Top</span>
-                </a>
-            </footer>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var myFullpage = new fullpage("#fullpage", {
-            anchors:['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
-            menu: '#myMenu',
-            autoScrolling: true,
-            navigation: true,
-            navigationPosition: "left",
-            
-        });
-    </script>
-
-    <footer id="site-footer" class="page-footer ">
-        <div class="footer-left">
-            <p class="opacity-75">
-                <i class="fas fa-phone"></i>
-                +996(703)334411
-            </p>
-            <p class="opacity-75">
-                <i class="far fa-envelope"></i>
-                baisalbek.daniiarov@gmail.com
-            </p>
-        </div>
-
-        <div class="footer-right">
-            <p class="note">
-                23.03.2019 Developed by
-                <a href="https://t.me/xbaysal11">
-                    <span class="marked"> Baisalbek Daniiarov</span>
-                </a>
-            </p>
-        </div>
-    </footer>
-</body>
-
+            <div class="footer-right">
+                <p class="note">
+                    23.03.2019 Developed by
+                    <a href="https://t.me/xbaysal11">
+                        <span class="marked"> Baisalbek Daniiarov</span>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>
