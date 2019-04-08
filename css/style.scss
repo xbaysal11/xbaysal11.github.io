@@ -139,6 +139,37 @@ h1 {
     height             : 300px;
 }
 
+
+
+.menu_wrapper {
+    position: relative;
+    display : inline-block;
+    &:hover .menu_content {
+        display: block;
+    }
+    & .menubtn {
+        background: rgba(0,0,0,0);
+        padding         : 16px;
+        border          : none;
+        cursor          : pointer;
+        & i {
+            color: #fff;
+            font-size: 30px;
+            
+        }
+    }
+    & .menu_content {
+        display         : none;
+        position        : absolute;
+        right:0;
+        background-color: #00000047;
+        min-width       : 160px;
+        box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index         : 1;
+    }
+
+}
+
 .card-wrapper {
     display: flex;
 }
