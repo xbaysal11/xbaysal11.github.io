@@ -51,7 +51,14 @@
                 <img src="./assets/img/logo.png" alt="" />
             </div>
             <div class="header-right">
-                <div class="menu">===</div>
+                    <ul id="myMenu">
+                            <li data-menuanchor="section1" class="active"><a href="#section1">First section</a></li>
+                            <li data-menuanchor="section2"><a href="#section2">Second section</a></li>
+                            <li data-menuanchor="section3"><a href="#section3">Third section</a></li>
+                            <li data-menuanchor="section4"><a href="#section4">Fourth section</a></li>
+                            <li data-menuanchor="section5"><a href="#section5">Five section</a></li>
+                            <li data-menuanchor="section6"><a href="#section6 ">Six section</a></li>
+                        </ul>
             </div>
         </div>
 
@@ -368,11 +375,11 @@
     <script type="text/javascript">
         var myFullpage = new fullpage("#fullpage", {
             anchors:['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+            menu: '#myMenu',
             autoScrolling: true,
             navigation: true,
             navigationPosition: "left",
-            easing: 'easeInOutCubic',
-	easingcss3: 'ease'
+            
         });
     </script>
 
