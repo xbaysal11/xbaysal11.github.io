@@ -89,7 +89,7 @@
         <div class="section active" id="section1">
             <!-- <video loop muted autoplay playsinline="playsinline" src="./assets/img/space_visual_elements_dribbble.mp4"> -->
             <div class="container">
-                <div class="my-icon">
+                <div class="my-icon">   
                     <img src="./assets/img/circle.png" alt="" />
                 </div>
                 <h1 class="section-heading">BAISALBEK DANIIAROV</h1>
@@ -281,10 +281,10 @@
                         delay: 5000
                     },
                     keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-                     coverflowEffect: {
+                        enabled: true,
+                        onlyInViewport: false
+                    },
+                    coverflowEffect: {
                         rotate: 50,
                         stretch: 0,
                         depth: 100,
@@ -348,7 +348,7 @@
             <div class="container">
                 <h1>Contacts</h1>
                 <div class="bg-icon">
-                    <a href="#">
+                    <a href="#section1">
                         <div class="flex-btn">
                             <i class="fas fa-arrow-alt-circle-up"></i>
                             <p>Top</p>
@@ -367,9 +367,12 @@
     </div>
     <script type="text/javascript">
         var myFullpage = new fullpage("#fullpage", {
+            anchors:['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
             autoScrolling: true,
             navigation: true,
-            navigationPosition: "left"
+            navigationPosition: "left",
+            easing: 'easeInOutCubic',
+	easingcss3: 'ease'
         });
     </script>
 
