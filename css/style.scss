@@ -72,14 +72,11 @@ body {
             left      : 30%;
             background: #6d0617;
         }
-
         & li {
             padding: 20px;
-
             & div {
                 padding: 5px 10px;
             }
-
             & span {
                 color        : rgb(255, 255, 255);
                 position     : absolute;
@@ -108,7 +105,6 @@ body {
 
 h1 {
     color: $color1;
-
     &.section-heading {
         &:before {
             content            : '';
@@ -139,8 +135,6 @@ h1 {
     height             : 300px;
 }
 
-
-
 .menu_wrapper {
     position: relative;
     display : inline-block;
@@ -167,7 +161,6 @@ h1 {
         box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index         : 1;
     }
-
 }
 
 .card-wrapper {
@@ -200,20 +193,16 @@ h1 {
     bottom    : 4em;
     right     : 4em;
     transition: .5s;
-
     &:hover {
         transform: scale(1.08)
     }
-
     & .flex-btn {
         display    : flex;
         align-items: flex-end;
-
         & p {
             margin: 1em 0 0 2em;
         }
     }
-
     & i {
         position : absolute;
         font-size: 5em;
@@ -227,11 +216,9 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap             : 1.5em;
     align-items          : center;
-
     & .res_col {
         justify-self: end;
     }
-
     & .res_inf {
         justify-self: start;
     }
@@ -271,7 +258,6 @@ h1 {
     97% {
         opacity: 99%;
     }
-
     100% {
         opacity   : 0;
         visibility: hidden;
@@ -297,16 +283,13 @@ h1 {
     width                : 100%;
     z-index              : 9;
     color                : #f2f2f2;
-
     .header-left {
         justify-self: start;
         padding     : 0 3em;
-
         img {
             width: 50%;
         }
     }
-
     .header-right {
         justify-self: end;
         padding     : 0 3em;
