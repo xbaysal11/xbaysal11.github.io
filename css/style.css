@@ -14,6 +14,21 @@ body {
   width: 40%;
 }
 
+.media-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 40% 0;
+}
+
+.media i {
+  font-size: 50px;
+  position: absolute;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.2);
+}
+
 .card {
   width: 30%;
   height: 60%;
@@ -100,6 +115,7 @@ body {
 
 h1 {
   color: #ff264a;
+  font-size: 35px;
 }
 
 h1.section-heading:before {
@@ -110,7 +126,7 @@ h1.section-heading:before {
   background-size: cover;
   position: absolute;
   left: 44%;
-  bottom: 7px;
+  top: 19%;
   width: 12%;
   height: 30px;
   z-index: -1;

@@ -18,6 +18,21 @@ body {
         width: 40%;
     }
 }
+.media-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40% 0;
+}
+
+.media{
+    & i {
+        font-size: 50px;
+        // display: block;
+        position: absolute;
+        line-height: 0.8;
+        color: rgba(255, 255, 255, 0.2);
+    }
+}
 
 .card {
     width        : 30%;
@@ -105,6 +120,7 @@ body {
 
 h1 {
     color: $color1;
+    font-size: 35px;
     &.section-heading {
         &:before {
             content            : '';
@@ -114,7 +130,7 @@ h1 {
             background-size    : cover;
             position           : absolute;
             left               : 44%;
-            bottom             : 7px;
+            top             : 19%;
             width              : 12%;
             height             : 30px;
             z-index            : -1;
