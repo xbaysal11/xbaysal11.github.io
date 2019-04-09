@@ -145,6 +145,14 @@ h1.section-heading:before {
   height: 300px;
 }
 
+.swiper-button-next {
+  background-image: url("../assets/img/angle-right-solid.svg");
+}
+
+.swiper-button-prev {
+  background-image: url("../assets/img/angle-left-solid.svg");
+}
+
 .menu_wrapper {
   position: relative;
   display: inline-block;
@@ -163,7 +171,7 @@ h1.section-heading:before {
 
 .menu_wrapper .menubtn i {
   color: #fff;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .menu_wrapper .menu_content {
@@ -175,6 +183,10 @@ h1.section-heading:before {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.menu_wrapper .menu_content .menu-item {
+  margin: 5px 0;
 }
 
 .card-wrapper {
