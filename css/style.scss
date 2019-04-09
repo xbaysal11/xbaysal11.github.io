@@ -35,18 +35,18 @@ body {
 }
 
 .card {
-    width        : 30%;
+    width        : 33%;
     height       : 60%;
     background   : rgba(8, 8, 8, 0.544);
     border-radius: 3px;
-    margin       : 10px;
+    margin       :  0 10px;
 
     &:before {
         position  : absolute;
         content   : '';
-        left      : 10%;
-        top       : 40%;
-        width     : 50px;
+        left      : 16%;
+        top       : 50%;
+        width     : 90px;
         height    : 10px;
         background: $color1;
     }
@@ -54,9 +54,9 @@ body {
     &:after {
         position  : absolute;
         content   : '';
-        right     : 12%;
-        top       : 40%;
-        width     : 50px;
+        right     : 16%;
+        top       : 50%;
+        width     : 90px;
         height    : 10px;
         background: $color1;
     }
