@@ -79,7 +79,7 @@ body {
   width: 2px;
   height: 100%;
   top: 0;
-  left: 30%;
+  left: 20%;
   background: #6d0617;
 }
 
@@ -94,7 +94,7 @@ body {
 .timeline ul li span {
   color: white;
   position: absolute;
-  left: 28%;
+  left: 18%;
   font-size: 12px;
   background: #ff264a;
   padding: 5px;
@@ -133,16 +133,15 @@ h1.section-heading:before {
 }
 
 .swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 90%;
+  padding: 30px 30px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 300px;
+  height: 350px;
 }
 
 .swiper-button-next {
