@@ -126,7 +126,7 @@ h1.section-heading:before {
   background-size: cover;
   position: absolute;
   left: 44%;
-  top: 16%;
+  top: 11%;
   width: 12%;
   height: 30px;
   z-index: -1;
@@ -151,6 +151,17 @@ h1.section-heading:before {
 
 .swiper-button-prev {
   background-image: url("../assets/img/angle-left-solid.svg");
+}
+
+.left-title {
+  text-align: left;
+  margin: 0 1em;
+  padding: 0;
+}
+
+.left-title p {
+  padding: 0;
+  margin: calc(1em-12px) 0;
 }
 
 .menu_wrapper {
@@ -223,6 +234,10 @@ h1.section-heading:before {
   margin: 0;
 }
 
+.row-card-item .skill-name {
+  margin: 1em 0;
+}
+
 .bg-icon {
   position: absolute;
   bottom: 4em;
@@ -283,7 +298,7 @@ h1.section-heading:before {
   margin: auto;
   z-index: 10;
   height: 100%;
-  max-height: 550px;
+  max-height: 600px;
   padding: 20px;
   text-align: center;
 }
