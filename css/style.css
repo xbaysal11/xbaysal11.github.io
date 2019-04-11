@@ -334,6 +334,14 @@ h1.section-heading:before {
   text-align: center;
 }
 
+.speach {
+  background-image: url("../assets/img/SEO5.png");
+  padding: 6% 0;
+  margin: 5% 0;
+  width: 100%;
+  background-size: cover;
+}
+
 #fp-nav ul li a span {
   background: white;
 }
