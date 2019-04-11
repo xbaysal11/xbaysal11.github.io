@@ -11,6 +11,9 @@
     <!-- JavaScripts -->
     <script type="text/javascript" src="./js/fullpage.min.js"></script>
     <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
     <!-- Style-->
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
@@ -97,9 +100,42 @@
     <div id="fullpage">
         <div class="section" data-anchor="main">
             <div class="container">
-                <div class="my-icon">
+                <!-- <div class="my-icon">
                     <img src="./assets/img/circle.png" alt="" />
+                </div> -->
+
+                <div id="scene">
+                    <div class=" img1" data-depth="0.1"><img width="45%" src="./assets/img/circle.png" /></div>
+                    <div data-depth="0.7 ">
+                        <img id="p1" class="icons" src="./assets/img/icons8-css3.svg" />
+                    </div>
+                    <div data-depth="0.3 ">
+                        <img  id="p2" class="icons" src="./assets/img/icons8-github.svg" />
+                    </div>
+                    <div data-depth="0.9 ">
+                        <img id="p3" class="icons" src="./assets/img/icons8-html-5.svg" />
+                    </div>
+                    <div data-depth="0.2">
+                        <img id="p4" class="icons" src="./assets/img/icons8-java.svg" />
+                    </div>
+                    <div data-depth="0.9 ">
+                        <img id="p5" class="icons" src="./assets/img/icons8-javascript.svg" />
+                    </div>
+                    <div data-depth="0.3 ">
+                        <img id="p6" class="icons" src="./assets/img/icons8-python.svg" />
+                    </div>
+                    <div data-depth="0.6 ">
+                        <img id="p7" class="icons" src="./assets/img/icons8-sql-30.png" />
+                    </div>
+                    <div data-depth="0.2 ">
+                        <img id="p8" class="icons" src="./assets/img/icons8-ubuntu-30.png" />
+                    </div>
                 </div>
+
+                <script>
+                    var scene = document.getElementById("scene");
+                    var parallaxInstance = new Parallax(scene);
+                </script>
                 <h1>BAISALBEK DANIIAROV</h1>
                 <h5>
                     The world consists of zeros and ones.<br />
@@ -167,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <footer class="scrolldown">
                 <a class="down" href="#skills">
@@ -307,9 +343,9 @@
                 <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/img/gitimg.png" width="80%" alt="" />
                 </a>
-            <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
-                <img src="http://ghchart.rshah.org/ff264a/xbaysal11"  alt="xbaysal11's Github chart" />
-            </a>
+                <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
+                    <img src="http://ghchart.rshah.org/ff264a/xbaysal11" alt="xbaysal11's Github chart" />
+                </a>
             </div>
 
             <footer class="scrolldown">
@@ -383,7 +419,7 @@
         <div class="section" data-anchor="experience">
             <div class="container">
                 <h1 class="section-heading">Experience</h1>
-                
+
                 <div class="timeline">
                     <ul>
                         <li>
