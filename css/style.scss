@@ -22,6 +22,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40% 0;
+    align-content: center;
+    height: 50%;
+}
+
+.activ-content{
+    display: grid;
+    height: 70%;
+}
+
+.git-chart{
+    align-self: end; 
 }
 
 .media{
@@ -292,11 +303,11 @@ h1 {
 .container {
     width     : 100%;
     max-width : 800px;
-    margin    : auto;
+    margin    : 0 auto;
     z-index   : 10;
     height    : 100%;
-    max-height: 600px;
-    padding   : 20px;
+    max-height: 580px;
+    padding   : 0 50px;
     text-align: center;
 }
 .speach{
@@ -407,6 +418,7 @@ a {
 .navbar-sidebar .social a:hover {
     color: #fff;
     box-shadow: 1px 1px 10px $color1;
+    background: rgba(0,0,0,0.2);
 }
 
 .navbar-sidebar .social .icon {
