@@ -41,25 +41,25 @@ body {
     border-radius: 3px;
     margin       :  0 10px;
 
-    &:before {
-        position  : absolute;
-        content   : '';
-        left      : 16%;
-        top       : 50%;
-        width     : 90px;
-        height    : 10px;
-        background: $color1;
-    }
+    // &:before {
+    //     position  : absolute;
+    //     content   : '';
+    //     left      : 16%;
+    //     top       : 50%;
+    //     width     : 90px;
+    //     height    : 10px;
+    //     background: $color1;
+    // }
 
-    &:after {
-        position  : absolute;
-        content   : '';
-        right     : 16%;
-        top       : 50%;
-        width     : 90px;
-        height    : 10px;
-        background: $color1;
-    }
+    // &:after {
+    //     position  : absolute;
+    //     content   : '';
+    //     right     : 16%;
+    //     top       : 50%;
+    //     width     : 90px;
+    //     height    : 10px;
+    //     background: $color1;
+    // }
 }
 
 .card-header {
@@ -186,8 +186,9 @@ h1 {
     margin: 0 1em;
     padding: 0;
     & p {
+        margin: 1em 0;
         padding: 0;
-        margin: calc(1em-12px) 0;
+        font-size: 10px;
     }
 }
 .menu_wrapper {
@@ -246,7 +247,8 @@ h1 {
     margin               : 0;
     & .skill-name{
         
-            margin: 1em 0;
+            margin: 1.2em 0;
+            text-align: left;   
     }
 }
 
