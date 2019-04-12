@@ -100,6 +100,7 @@ body {
                 background   : $color1;
                 padding      : 5px;
                 border-radius: 10%;
+                box-shadow: 1px 1px 10px $color1;
             }
         }
     }
@@ -300,8 +301,8 @@ h1 {
 }
 .speach{
     background-image: url("../assets/img/SEO5.png");
-    padding: 6% 0;
-    margin:5% 0 ;
+    padding: 1.3% 0;
+    margin: 5% 0 ;
     width: 100%;
     background-size: cover;
 }
@@ -405,6 +406,7 @@ a {
 
 .navbar-sidebar .social a:hover {
     color: #fff;
+    box-shadow: 1px 1px 10px $color1;
 }
 
 .navbar-sidebar .social .icon {
