@@ -25,16 +25,27 @@ body {
   height: 50%;
 }
 
+.activ-bg {
+  background-image: url(../assets//img/carbon.png);
+  background-size: cover;
+}
+
 .activ-content {
   display: -ms-grid;
   display: grid;
   height: 70%;
 }
 
+.typed {
+  text-align: left;
+  margin: 5em;
+}
+
 .git-chart {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  margin: 2em 0;
 }
 
 .media i {
@@ -238,6 +249,7 @@ h1.section-heading:before {
 .skill-name {
   -ms-grid-column-align: start;
       justify-self: start;
+  font-weight: 300;
 }
 
 .skill-logo {

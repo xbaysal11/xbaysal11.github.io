@@ -25,14 +25,23 @@ body {
     align-content: center;
     height: 50%;
 }
-
+.activ-bg{
+    background-image: url(../assets//img/carbon.png);
+    background-size: cover;
+}
 .activ-content{
+    
     display: grid;
     height: 70%;
+}
+.typed{
+    text-align: left;
+    margin: 5em;
 }
 
 .git-chart{
     align-self: end; 
+    margin: 2em 0;
 }
 
 .media{
@@ -240,6 +249,7 @@ h1 {
 
 .skill-name {
     justify-self: start;
+    font-weight: 300;
 }
 
 .skill-logo {
