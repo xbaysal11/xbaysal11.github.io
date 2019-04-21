@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hi, I'm Baisalbek Daniiarov</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/circle.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/img/circle.png"
+    />
     <!-- JavaScripts -->
     <script type="text/javascript" src="./js/fullpage.min.js"></script>
     <script type="text/javascript" src="./js/swiper.min.js"></script>
@@ -16,545 +19,775 @@
     <!-- Style-->
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/all.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="loader">
-        <video autoplay loop width="30%" src="./assets/img/studio_loader_loop.mp4"></video>
+      <video
+        autoplay
+        loop
+        width="30%"
+        src="./assets/img/studio_loader_loop.mp4"
+      ></video>
     </div>
     <script type="text/javascript">
-        window.addEventListener("load", function () {
-            const loader = document.querySelector(".loader");
-            loader.className += " hidden";
-        });
+      window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+      });
     </script>
     <header>
-        <!-- <div class="navbar">
-            <div class="header-left opacity-75">
-                <img src="./assets/img/logo.png" alt="" />
-            </div>
-            <div class="header-right">
-                <div class="menu_wrapper">
-                    <button class="menubtn opacity-75">
-                        <i class="fas fa-align-right"></i>
-                    </button>
-                    <div class="menu_content">
-                        <ul id="myMenu">
-                            <li class="menu-item" data-menuanchor="main" class="active">
-                                <a href="#main">Main</a>
-                            </li>
-                            <li class="menu-item" data-menuanchor="about_me">
-                                <a href="#about_me">About Me</a>
-                            </li>
-                            <li class="menu-item" data-menuanchor="skills">
-                                <a href="#skills">Skills</a>
-                            </li>
-                            <li class="menu-item" data-menuanchor="projects">
-                                <a href="#projects">Projects</a>
-                            </li>
-                            <li class="menu-item" data-menuanchor="expirience">
-                                <a href="#expirience">Expirience</a>
-                            </li>
-                            <li class="menu-item" data-menuanchor="contacts">
-                                <a href="#contacts ">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <nav class="navbar-sidebar ">
-            <ul class="social">
-                <li>
-                    <a href="https://github.com/xbaysal11" target="_blank">
-                        <i class="icon fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/xbaysal11" target="_blank">
-                        <i class="icon fab fa-telegram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:baisalbek.daniiaro@gmail.com" target="_blank">
-                        <i class="icon fab fa-google"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://xbaysal11.slack.com" target="_blank">
-                        <i class="icon fab fa-slack"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="./404.html">
-                        <i class="icon fab fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar-sidebar ">
+        <ul class="social">
+          <li>
+            <a href="https://github.com/xbaysal11" target="_blank">
+              <i class="icon fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/xbaysal11" target="_blank">
+              <i class="icon fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:baisalbek.daniiaro@gmail.com" target="_blank">
+              <i class="icon fab fa-google"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://xbaysal11.slack.com" target="_blank">
+              <i class="icon fab fa-slack"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./404.html">
+              <i class="icon fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div id="fullpage">
-        <div class="section" data-anchor="main">
-            <div class="container">
-                <!-- <div class="my-icon">
+      <div class="section" data-anchor="main">
+        <div class="container">
+          <!-- <div class="my-icon">
                     <img src="./assets/img/circle.png" alt="" />
                 </div> -->
 
-                <div id="scene">
-                    <div class=" img1" data-depth="0.1"><img width="45%" src="./assets/img/circle.png" /></div>
-                    <div data-depth="0.7 ">
-                        <img id="p1" class="icons" src="./assets/img/icons8-css3.svg" />
-                    </div>
-                    <div data-depth="0.3 ">
-                        <img id="p2" class="icons" src="./assets/img/icons8-github.svg" />
-                    </div>
-                    <div data-depth="0.9 ">
-                        <img id="p3" class="icons" src="./assets/img/icons8-html-5.svg" />
-                    </div>
-                    <div data-depth="0.2">
-                        <img id="p4" class="icons" src="./assets/img/icons8-java.svg" />
-                    </div>
-                    <div data-depth="0.9 ">
-                        <img id="p5" class="icons" src="./assets/img/icons8-javascript.svg" />
-                    </div>
-                    <div data-depth="0.3 ">
-                        <img id="p6" class="icons" src="./assets/img/icons8-python.svg" />
-                    </div>
-                    <div data-depth="0.6 ">
-                        <img id="p7" class="icons" src="./assets/img/icons8-sql-30.png" />
-                    </div>
-                    <div data-depth="0.2 ">
-                        <img id="p8" class="icons" src="./assets/img/icons8-ubuntu-30.png" />
-                    </div>
-                </div>
-
-                <script>
-                    var scene = document.getElementById("scene");
-                    var parallaxInstance = new Parallax(scene);
-                </script>
-                <h1>BAISALBEK DANIIAROV</h1>
-                <h5>
-                    The world consists of zeros and ones.<br />
-                    You are either one or zero.
-                </h5>
-                <div class="bg-icon">
-                    <a href="https://drive.google.com/file/d/1y6_MfTgz2zB12kUqQaFqRYgc157wQ6qN/view?usp=sharing"
-                        target="_blank">
-                        <div class="flex-btn">
-                            <i class="fas fa-file-pdf"></i>
-                            <p>Resume</p>
-                        </div>
-                    </a>
-                </div>
+          <div id="scene">
+            <div class=" img1" data-depth="0.1">
+              <img width="45%" src="./assets/img/circle.png" />
             </div>
-            <footer class="scrolldown">
-                <a class="down" href="#about_me">
-                    <span class="icon"></span>
-                    <span class="txt">About Me</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" data-anchor="about_me">
-            <div class="container">
-                <h1 class="section-heading">About Me</h1>
-                <div class="about">
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Name:</strong>
-                        </div>
-                        <div class=" res_inf">Baisalbek Daniiarov.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Age:</strong>
-                        </div>
-                        <div class=" res_inf">20.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Nationality:</strong>
-                        </div>
-                        <div class=" res_inf">Kyrgyz.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Address:</strong>
-                        </div>
-                        <div class=" res_inf">Bishkek,Kyrgyzstan.</div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Profession:</strong>
-                        </div>
-                        <div class=" res_inf">
-                            Web Programmer.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class=" res_col">
-                            <strong>Specialization:</strong>
-                        </div>
-                        <div class=" res_inf">
-                            Front-End Developer.
-                        </div>
-                    </div>
-                </div>
-                <div class="speach">I am studying in my second year at university. Taking part in mini-projects I received a small but invaluable experience in teamwork and
-                        in promoting the project.I am an IT professional with over 12 years of computer programming experience</div>
-
+            <div data-depth="0.7 ">
+              <img id="p1" class="icons" src="./assets/img/icons8-css3.svg" />
             </div>
-            <footer class="scrolldown">
-                <a class="down" href="#skills">
-                    <span class="icon"></span>
-                    <span class="txt">Skills</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" data-anchor="skills">
-            <div class="container">
-                <h1 class="section-heading">Skills</h1>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">Languages</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="left-title">
-                                <p>Commonly used :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/javascript.png" />
-                                <h5 class="skill-name">JavaScript ES6</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/html.png" />
-                                <h5 class="skill-name">HTML5</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/css.png" />
-                                <h5 class="skill-name">CSS3</h5>
-                            </div>
-                            <div class="left-title">
-                                <p>Basic level :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/python.png" />
-                                <h5 class="skill-name">Python</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/java.png" />
-                                <h5 class="skill-name">Java</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/mysql.png" />
-                                <h5 class="skill-name">MySQL</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">WEB Tools</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="left-title">
-                                <p>Commonly used :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/sass.png" />
-                                <h5 class="skill-name">SASS / SCSS<br />Styled Components</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/webpack.png" />
-                                <h5 class="skill-name">WebPack</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/gulp.png" />
-                                <h5 class="skill-name">Gulp</h5>
-                            </div>
-                            <div class="left-title">
-                                <p>Frameworks :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/react.png" />
-                                <h5 class="skill-name">React</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/bootstrap.png" />
-                                <h5 class="skill-name">Bootstrap</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/jquery.png" />
-                                <h5 class="skill-name">JQuery</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="">WEB Environment</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="left-title">
-                                <p>Commonly used :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/ubuntu.png" />
-                                <h5 class="skill-name">Ubuntu</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/git.png" />
-                                <h5 class="skill-name">GitHub / GitLab</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/vim.png" />
-                                <h5 class="skill-name">VIM / VSCode</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/trello.png" />
-                                <h5 class="skill-name">Trello / Notion</h5>
-                            </div>
-                            <div class="left-title">
-                                <p>Knowledge :</p>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/api.png" />
-                                <h5 class="skill-name">API's</h5>
-                            </div>
-                            <div class="row-card-item">
-                                <img class="skill-logo" src="./assets/img/oop.png" />
-                                <h5 class="skill-name">OOP</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div data-depth="0.3 ">
+              <img id="p2" class="icons" src="./assets/img/icons8-github.svg" />
             </div>
+            <div data-depth="0.9 ">
+              <img id="p3" class="icons" src="./assets/img/icons8-html-5.svg" />
+            </div>
+            <div data-depth="0.2">
+              <img id="p4" class="icons" src="./assets/img/icons8-java.svg" />
+            </div>
+            <div data-depth="0.9 ">
+              <img
+                id="p5"
+                class="icons"
+                src="./assets/img/icons8-javascript.svg"
+              />
+            </div>
+            <div data-depth="0.3 ">
+              <img id="p6" class="icons" src="./assets/img/icons8-python.svg" />
+            </div>
+            <div data-depth="0.6 ">
+              <img id="p7" class="icons" src="./assets/img/icons8-sql-30.png" />
+            </div>
+            <div data-depth="0.2 ">
+              <img
+                id="p8"
+                class="icons"
+                src="./assets/img/icons8-ubuntu-30.png"
+              />
+            </div>
+          </div>
 
-            <footer class="scrolldown">
-                <a class="down" href="#projects">
-                    <span class="icon"></span>
-                    <span class="txt">Projects</span>
-                </a>
-            </footer>
+          <script>
+            var scene = document.getElementById("scene");
+            var parallaxInstance = new Parallax(scene);
+          </script>
+          <h1>BAISALBEK DANIIAROV</h1>
+          <h5>
+            The world consists of zeros and ones.<br />
+            You are either one or zero.
+          </h5>
+          <div class="bg-icon">
+            <a
+              href="https://drive.google.com/file/d/1y6_MfTgz2zB12kUqQaFqRYgc157wQ6qN/view?usp=sharing"
+              target="_blank"
+            >
+              <div class="flex-btn">
+                <i class="fas fa-file-pdf"></i>
+                <p>Resume</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <footer class="scrolldown">
+          <a class="down" href="#about_me">
+            <span class="icon"></span>
+            <span class="txt">About Me</span>
+          </a>
+        </footer>
+      </div>
+      <div class="section" data-anchor="about_me">
+        <div class="container">
+          <h1 class="section-heading">About Me</h1>
+          <div class="about">
+            <div class="row">
+              <div class=" res_col">
+                <strong>Name:</strong>
+              </div>
+              <div class=" res_inf">Baisalbek Daniiarov.</div>
+            </div>
+            <div class="row">
+              <div class=" res_col">
+                <strong>Age:</strong>
+              </div>
+              <div class=" res_inf">20.</div>
+            </div>
+            <div class="row">
+              <div class=" res_col">
+                <strong>Nationality:</strong>
+              </div>
+              <div class=" res_inf">Kyrgyz.</div>
+            </div>
+            <div class="row">
+              <div class=" res_col">
+                <strong>Address:</strong>
+              </div>
+              <div class=" res_inf">Bishkek,Kyrgyzstan.</div>
+            </div>
+            <div class="row">
+              <div class=" res_col">
+                <strong>Profession:</strong>
+              </div>
+              <div class=" res_inf">
+                Web Programmer.
+              </div>
+            </div>
+            <div class="row">
+              <div class=" res_col">
+                <strong>Specialization:</strong>
+              </div>
+              <div class=" res_inf">
+                Front-End Developer.
+              </div>
+            </div>
+          </div>
+          <div class="speach">
+            I am studying in my second year at university. Taking part in
+            mini-projects I received a small but invaluable experience in
+            teamwork and in promoting the project.I am an IT professional with
+            over 12 years of computer programming experience
+          </div>
+        </div>
+        <footer class="scrolldown">
+          <a class="down" href="#skills">
+            <span class="icon"></span>
+            <span class="txt">Skills</span>
+          </a>
+        </footer>
+      </div>
+      <div class="section" data-anchor="skills">
+        <div class="container">
+          <h1 class="section-heading">Skills</h1>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="">Languages</h4>
+              </div>
+              <div class="card-body">
+                <div class="left-title">
+                  <p>Commonly used :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/javascript.png" />
+                  <h5 class="skill-name">JavaScript ES6</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/html.png" />
+                  <h5 class="skill-name">HTML5</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/css.png" />
+                  <h5 class="skill-name">CSS3</h5>
+                </div>
+                <div class="left-title">
+                  <p>Basic level :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/python.png" />
+                  <h5 class="skill-name">Python</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/java.png" />
+                  <h5 class="skill-name">Java</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/mysql.png" />
+                  <h5 class="skill-name">MySQL</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4 class="">WEB Tools</h4>
+              </div>
+              <div class="card-body">
+                <div class="left-title">
+                  <p>Commonly used :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/sass.png" />
+                  <h5 class="skill-name">SASS / SCSS<br />Styled Components</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/webpack.png" />
+                  <h5 class="skill-name">WebPack</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/gulp.png" />
+                  <h5 class="skill-name">Gulp</h5>
+                </div>
+                <div class="left-title">
+                  <p>Frameworks :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/react.png" />
+                  <h5 class="skill-name">React</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/bootstrap.png" />
+                  <h5 class="skill-name">Bootstrap</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/jquery.png" />
+                  <h5 class="skill-name">JQuery</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h4 class="">WEB Environment</h4>
+              </div>
+              <div class="card-body">
+                <div class="left-title">
+                  <p>Commonly used :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/ubuntu.png" />
+                  <h5 class="skill-name">Ubuntu</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/git.png" />
+                  <h5 class="skill-name">GitHub / GitLab</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/vim.png" />
+                  <h5 class="skill-name">VIM / VSCode</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/trello.png" />
+                  <h5 class="skill-name">Trello / Notion</h5>
+                </div>
+                <div class="left-title">
+                  <p>Knowledge :</p>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/api.png" />
+                  <h5 class="skill-name">API's</h5>
+                </div>
+                <div class="row-card-item">
+                  <img class="skill-logo" src="./assets/img/oop.png" />
+                  <h5 class="skill-name">OOP</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="section" data-anchor="projects">
-            <div class="container">
-                <h1 class="section-heading">Projects</h1>
-                <div class="swiper-container">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-wrapper">
+        <footer class="scrolldown">
+          <a class="down" href="#projects">
+            <span class="icon"></span>
+            <span class="txt">Projects</span>
+          </a>
+        </footer>
+      </div>
 
-                        <div class="swiper-slide"
-                            style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)">
-                        </div>
-                        <div class="swiper-slide"
-                            style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)">
-                        </div>
-                        <div class="swiper-slide"
-                            style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)">
-                        </div>
-                        <div class="swiper-slide"
-                            style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fnegativespace.co%2Fwp-content%2Fuploads%2F2017%2F10%2Fnegative-space-code-html-dark-background-Mian-Shahzad-Raza-thumb-1-1062x708.jpg&f=1)">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+      <div class="section" data-anchor="projects">
+        <div class="container">
+          <h1 class="section-heading">Projects</h1>
+          <div class="swiper-container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.etAeTmNS6G2oo4vZMk5_RgHaFH%26pid%3DApi&f=1)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fnegativespace.co%2Fwp-content%2Fuploads%2F2017%2F10%2Fnegative-space-code-html-dark-background-Mian-Shahzad-Raza-thumb-1-1062x708.jpg&f=1)"
+              ></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <script>
+          var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            initialSlide: 2,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            autoplay: {
+              delay: 5000
+            },
+            keyboard: {
+              enabled: true,
+              onlyInViewport: false
+            },
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true
+            },
+            pagination: {
+              el: ".swiper-pagination"
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev"
+            }
+          });
+        </script>
+        <footer class="scrolldown">
+          <a class="down" href="#activities">
+            <span class="icon"></span>
+            <span class="txt">Activities</span>
+          </a>
+        </footer>
+      </div>
+      <div class="section" data-anchor="activities">
+        <div class="container ">
+          <h1 class="section-heading">Activities</h1>
+          <div class="activ-content activ-bg ">
+            <div class="typed">
+              $
+              <span class="typed-string"></span>
             </div>
             <script>
-                var swiper = new Swiper(".swiper-container", {
-                    effect: "coverflow",
-                    grabCursor: true,
-                    initialSlide: 2,
-                    centeredSlides: true,
-                    slidesPerView: "auto",
-                    loop: true,
-                    autoplay: {
-                        delay: 5000
-                    },
-                    keyboard: {
-                        enabled: true,
-                        onlyInViewport: false
-                    },
-                    coverflowEffect: {
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: true
-                    },
-                    pagination: {
-                        el: ".swiper-pagination"
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev"
-                    }
-                });
+              var typed = new Typed(".typed-string", {
+                strings: [
+                  "Baisalbek Daniiarov ^2000 <br/> ` https://github.com/xbaysal11`^5000  "
+                ],
+                cursorChar: "_",
+                loop: true,
+                typeSpeed: 40,
+                backSpeed: 40
+              });
             </script>
-            <footer class="scrolldown">
-                <a class="down" href="#activities">
-                    <span class="icon"></span>
-                    <span class="txt">Activities</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" data-anchor="activities">
-            <div class="container ">
-                <h1 class="section-heading">Activities</h1>
-                <div class="activ-content activ-bg ">
-                    <div class="typed">
-                        $
-                        <span class="typed-string"></span>
-                    </div>
-                    <script>var typed = new Typed(".typed-string", {
-                            strings: ['Baisalbek Daniiarov ^2000 <br/> ` https://github.com/xbaysal11`^5000  '],
-                            cursorChar: '_',
-                            loop: true,
-                            typeSpeed: 40,
-                            backSpeed: 40
-                        });
-                    </script>
-                    <div class="git-chart">
-                        <a href="https://github.com/xbaysal11" target="_blank" rel="noopener noreferrer">
-                            <img src="http://ghchart.rshah.org/ff264a/xbaysal11" alt="xbaysal11's Github chart" />
-                        </a>
-                    </div>
-
-                </div>
+            <div class="git-chart">
+              <a
+                href="https://github.com/xbaysal11"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="http://ghchart.rshah.org/ff264a/xbaysal11"
+                  alt="xbaysal11's Github chart"
+                />
+              </a>
             </div>
-
-            <footer class="scrolldown">
-                <a class="down" href="#experience">
-                    <span class="icon"></span>
-                    <span class="txt">Experience</span>
-                </a>
-            </footer>
+          </div>
         </div>
-        <div class="section" data-anchor="experience">
-            <div class="container">
-                <h1 class="section-heading">Experience</h1>
 
-                <div class="timeline">
-                    <ul>
-                        <li>
-                            <span>2019</span>
-                            <div>Present Time</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2018</span>
-                            <div>Internship in IT-Academy</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2018</span>
-                            <div>Freelance in University</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2017</span>
-                            <div>Enter to Internation AlaToo University ( IAU )</div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span>2017</span>
-                            <div>Graduation Tokmok Turkish High School</div>
-                        </li>
-                    </ul>
-                </div>
+        <footer class="scrolldown">
+          <a class="down" href="#experience">
+            <span class="icon"></span>
+            <span class="txt">Experience</span>
+          </a>
+        </footer>
+      </div>
+      <div class="section" data-anchor="experience">
+        <div class="container">
+          <h1 class="section-heading">Experience</h1>
+
+          <div class="timeline">
+            <ul>
+              <li>
+                <span>2019</span>
+                <div>Present Time</div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>2018</span>
+                <div>Internship in IT-Academy</div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>2018</span>
+                <div>Freelance in University</div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>2017</span>
+                <div>Enter to Internation AlaToo University ( IAU )</div>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>2017</span>
+                <div>Graduation Tokmok Turkish High School</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="scrolldown">
+          <a class="down" href="#contacts">
+            <span class="icon"></span>
+            <span class="txt">Contacts</span>
+          </a>
+        </footer>
+      </div>
+      <div class="section" data-anchor="contacts">
+        <div class="container">
+          <h1 class="section-heading">Contacts</h1>
+          <div id="map"></div>
+          <script>
+                        var map;
+                        function initMap() {
+                          map = new google.maps.Map(document.getElementById("map"), {
+                            center: { lat: -34.397, lng: 150.644 },
+                            zoom: 8,
+                            styles=[
+              {
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#212121"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#212121"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.country",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#9e9e9e"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.land_parcel",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "administrative.locality",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#bdbdbd"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.business",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#181818"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
+                ]
+              },
+              {
+                "featureType": "poi.park",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#1b1b1b"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#2c2c2c"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#8a8a8a"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#373737"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#3c3c3c"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.highway.controlled_access",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#4e4e4e"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#616161"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "stylers": [
+                  {
+                    "visibility": "off"
+                  }
+                ]
+              },
+              {
+                "featureType": "transit",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#757575"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                  {
+                    "color": "#000000"
+                  }
+                ]
+              },
+              {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#3d3d3d"
+                  }
+                ]
+              }
+            ]
+                          });
+                        }
+          </script>
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_quJUtb7uzXdmcwTRKi5uepAsx9pcp04&callback=initMap"
+            async
+            defer
+          ></script>
+          <div class="media-grid">
+            <div class="media">
+              <div class="media-body">
+                <h4>Phone Numbers</h4>
+                <i class="fas fa-phone"></i>
+                <p>+996 (703) 33 44 11</p>
+              </div>
             </div>
-            <footer class="scrolldown">
-                <a class="down" href="#contacts">
-                    <span class="icon"></span>
-                    <span class="txt">Contacts</span>
-                </a>
-            </footer>
-        </div>
-        <div class="section" data-anchor="contacts">
-            <div class="container">
-                <h1 class="section-heading">Contacts</h1>
-
-                <div class="media-grid">
-                    <div class="media">
-                        <div class="media-body">
-                            <h4>Phone Numbers</h4>
-                            <i class="fas fa-phone"></i>
-                            <p>+996 (703) 33 44 11</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-body">
-                            <h4>Email</h4>
-                            <i class="far fa-envelope"></i>
-                            <p>baisalbek.daniiarov@gmail.cm</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="media">
+              <div class="media-body">
+                <h4>Email</h4>
+                <i class="far fa-envelope"></i>
+                <p>baisalbek.daniiarov@gmail.cm</p>
+              </div>
             </div>
-
-            <footer class="scrolldown">
-                <a class="down" href="#main">
-                    <span class="icon"></span>
-                    <span class="txt">Top</span>
-                </a>
-            </footer>
+          </div>
         </div>
+
+        <footer class="scrolldown">
+          <a class="down" href="#main">
+            <span class="icon"></span>
+            <span class="txt">Top</span>
+          </a>
+        </footer>
+      </div>
     </div>
     <script type="text/javascript">
-        var myFullpage = new fullpage("#fullpage", {
-            navigationTooltips: [
-                "Main",
-                "About Me",
-                "Skills",
-                "Activities",
-                "Projects",
-                "Experience",
-                "Contacts"
-            ],
-            anchors: [
-                "main",
-                "about_me",
-                "skills",
-                "activities",
-                "projects",
-                "experience",
-                "contacts"
-            ],
-            // menu: "#myMenu",
-            animateAnchor: true,
-            autoScrolling: true,
-            navigation: true,
-            navigationPosition: "left"
-        });
+      var myFullpage = new fullpage("#fullpage", {
+        navigationTooltips: [
+          "Main",
+          "About Me",
+          "Skills",
+          "Activities",
+          "Projects",
+          "Experience",
+          "Contacts"
+        ],
+        anchors: [
+          "main",
+          "about_me",
+          "skills",
+          "activities",
+          "projects",
+          "experience",
+          "contacts"
+        ],
+        // menu: "#myMenu",
+        animateAnchor: true,
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: "left"
+      });
     </script>
     <footer id="site-footer" class="page-footer ">
-        <div class="footer-left">
-            <p class="opacity-75">
-                <i class="fas fa-phone"></i>
-                +996(703)334411
-            </p>
-            <p class="opacity-75">
-                <i class="far fa-envelope"></i>
-                baisalbek.daniiarov@gmail.com
-            </p>
-        </div>
+      <div class="footer-left">
+        <p class="opacity-75">
+          <i class="fas fa-phone"></i>
+          +996(703)334411
+        </p>
+        <p class="opacity-75">
+          <i class="far fa-envelope"></i>
+          baisalbek.daniiarov@gmail.com
+        </p>
+      </div>
 
-        <div class="footer-right">
-            <p class="note">
-                23.03.2019 Developed by
-                <a href="https://t.me/xbaysal11">
-                    <span class="marked"> Baisalbek Daniiarov</span>
-                </a>
-            </p>
-        </div>
+      <div class="footer-right">
+        <p class="note">
+          23.03.2019 Developed by
+          <a href="https://t.me/xbaysal11">
+            <span class="marked"> Baisalbek Daniiarov</span>
+          </a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
