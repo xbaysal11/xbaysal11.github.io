@@ -107,7 +107,7 @@ body {
       width: 2px;
       height: 100%;
       top: 0;
-      left: 20%;
+      left: 10%;
       background: #6d0617;
     }
     & li {
@@ -118,11 +118,11 @@ body {
       & span {
         color: rgb(255, 255, 255);
         position: absolute;
-        left: 18%;
+        left: 5%;
         font-size: 12px;
         background: $color1;
         padding: 5px;
-        border-radius: 10%;
+        border-radius: 7%;
         box-shadow: 1px 1px 10px $color1;
       }
     }
@@ -140,29 +140,52 @@ body {
 .about {
   line-height: 2em;
 }
-#p5 {
-  margin: 5vh 0 0 42vw;
+#scene {
+  position: relative;
+
+  #p5 {
+    // margin: 5vh 0 0 0;
+    left: 40em !important;
+    top: 2em !important;
+  }
+  #p2 {
+    // margin: 15vh 0 0 47vw;
+    left: 45em !important;
+    top: 7em !important;
+  }
+  #p3 {
+    // margin: 28vh 0 0 44vw;
+    left: 42em !important;
+    top: 13em !important;
+  }
+  #p4 {
+    // margin: 40vh 0 0 49vw;
+    left: 48em !important;
+    top: 18em !important;
+  }
+  #p1 {
+    // margin: 5vh 0 0 15vw;
+    left: 15em !important;
+    top: 2em !important;
+  }
+  #p6 {
+    // margin: 15vh 0 0 10vw;
+    left: 9em !important;
+    top: 7em !important;
+  }
+  #p7 {
+    // margin: 28vh 0 0 13vw;
+    left: 13em !important;
+    top: 13em !important;
+  }
+  #p8 {
+    // margin: 40vh 0 0 8vw;
+    left: 6em !important;
+    top: 18em !important;
+  }
 }
-#p2 {
-  margin: 15vh 0 0 47vw;
-}
-#p3 {
-  margin: 28vh 0 0 44vw;
-}
-#p4 {
-  margin: 40vh 0 0 49vw;
-}
-#p1 {
-  margin: 5vh 0 0 15vw;
-}
-#p6 {
-  margin: 15vh 0 0 10vw;
-}
-#p7 {
-  margin: 28vh 0 0 13vw;
-}
-#p8 {
-  margin: 40vh 0 0 8vw;
+.absolute {
+  position: absolute;
 }
 
 h1 {
@@ -177,7 +200,7 @@ h1 {
       background-size: cover;
       position: absolute;
       left: 44%;
-      top: 13%;
+      top: 8%;
       width: 12%;
       height: 30px;
       z-index: -1;
@@ -321,7 +344,7 @@ h1 {
   text-align: center;
 }
 .speach {
-  background-image: url("../assets/img/SEO5.png");
+  // background-image: url("../assets/img/SEO5.png");
   padding: 1.3% 0;
   margin: 5% 0;
   width: 100%;
