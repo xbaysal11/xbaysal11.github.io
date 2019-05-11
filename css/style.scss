@@ -61,7 +61,7 @@ body {
 .card {
   width: 33%;
   height: 60%;
-  background: rgba(8, 8, 8, 0.544);
+  background: rgba(0, 0, 0, 0.293);
   border-radius: 3px;
   margin: 0 10px;
 
@@ -88,8 +88,8 @@ body {
 
 .card-header {
   padding: 0.75em 1.25em;
-  background-color: rgba(0, 0, 0, 0.36);
-  border-bottom: 1px solid #ff264a71;
+  background-color: rgba(0, 0, 0, 0.462);
+  // border-bottom: 1px solid #ff264a84;
 
   & h4 {
     margin: 0;
@@ -287,6 +287,10 @@ body {
 
 .card-body {
   display: grid;
+  padding: 0.5em 0 1.5em 0;
+  border-left: 0.5px solid #ff264a36;
+  border-right: 0.5px solid #ff264a36;
+  border-top: 0.5px solid #ff264a36;
 }
 
 .row-card-item {
