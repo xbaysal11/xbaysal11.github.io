@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:400");
+// @import url("https://fonts.googleapis.com/css?family=Heebo:400");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 
 $color1: #ff264a;
 
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   background: url("../assets/img/image.jpg");
   color: #ffffff;
@@ -188,9 +189,11 @@ body {
   position: absolute;
 }
 
-h1 {
+.title {
   color: $color1;
   font-size: 35px;
+  margin: 0.4em 0;
+  position: relative;
   &.section-heading {
     &:before {
       content: "";
@@ -199,13 +202,18 @@ h1 {
       background-position: 0% 100%;
       background-size: cover;
       position: absolute;
-      left: 44%;
-      top: 8%;
-      width: 12%;
+      left: 41%;
+      top: 40%;
+      width: 18%;
       height: 30px;
       z-index: -1;
     }
   }
+}
+.description {
+  margin: 0;
+  padding: 0;
+  color: #811d2d;
 }
 
 .swiper-container {
@@ -271,14 +279,10 @@ h1 {
   display: flex;
 }
 
-.skill-name {
-  justify-self: start;
-  font-weight: 300;
-}
-
 .skill-logo {
   justify-self: center;
-  width: 30%;
+  width: 40%;
+  margin: 0.5em 0;
 }
 
 .card-body {
@@ -288,13 +292,8 @@ h1 {
 .row-card-item {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  margin: 0;
-  & .skill-name {
-    margin: 1.2em 0;
-    text-align: left;
-  }
 }
 
 .bg-icon {
