@@ -120,6 +120,7 @@ body {
         color: rgb(255, 255, 255);
         position: absolute;
         left: 5%;
+        top: 2.5em;
         font-size: 12px;
         background: $color1;
         padding: 5px;
@@ -299,7 +300,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
-
+.addr {
+  color: $color1;
+  margin: 0;
+  padding: 0;
+}
 .bg-icon {
   position: absolute;
   bottom: 4em;
