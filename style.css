@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+span {
+  font-size: 14px;
+  color: #000;
+  transition: 0.3s;
+}
+
+img {
+  width: 70px;
+  border-radius: 35px;
+  margin: 10px 15px 0 0;
+}
+
+table {
+  margin: 0;
+  /* float: right; */
+}
+
+table tr td:first-child {
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1a6dbb;
+  transition: 0.3s;
+}
+
+::-moz-selection {
+  color: white;
+  background: #1a6dbb;
+}
+
+::selection {
+  color: white;
+  background: #1a6dbb;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  margin: 150px 0 90px 0;
+  text-align: center;
+}
+
+.intro span {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.intro span.highlight {
+  background-color: #333;
+  color: white;
+}
+
+.intro span.highlight-red {
+  background-color: darkred;
+  color: white;
+  transition: 0.3s;
+}
+
+.intro span.highlight-red:hover {
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+
+@media (max-width: 360px) {
+  .intro {
+    margin: 50px 0 50px 0;
+  }
+
+  .intro span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  img {
+    display: none;
+  }
+
+  table {
+    float: none;
+  }
+}
